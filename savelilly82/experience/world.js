@@ -6,10 +6,10 @@ import { ventState, crusherState, laserState, platY, T } from './sim.js';
 
 const TAU = Math.PI * 2;
 const PAL = {
-  foundry: { skyTop: 0x07060a, skyBot: 0x3a0d06, haze: 0x5a1a0a, fog: 0x1a0806, wall: 0x6a4a40, accent: 0xff6a1a, far: 0x120b0c, lamp: 0xffa060 },
-  machine: { skyTop: 0x05070c, skyBot: 0x1a2030, haze: 0x2a3446, fog: 0x0c0f16, wall: 0x4a5262, accent: 0xffb21a, far: 0x0b0d13, lamp: 0xffd2a0 },
-  ascent: { skyTop: 0x0a0408, skyBot: 0x4a0a10, haze: 0x6a1018, fog: 0x1a060a, wall: 0x5a3a40, accent: 0xff2414, far: 0x10080b, lamp: 0xff8070 },
-  warden: { skyTop: 0x080306, skyBot: 0x520a0a, haze: 0x7a1408, fog: 0x1c0606, wall: 0x6a3a38, accent: 0xff2414, far: 0x12080a, lamp: 0xff6040 },
+  foundry: { skyTop: 0x07060a, skyBot: 0x3a0d06, haze: 0x5a1a0a, fog: 0x1a0806, wall: 0x4a342e, accent: 0xff6a1a, far: 0x120b0c, lamp: 0xffa060 },
+  machine: { skyTop: 0x05070c, skyBot: 0x1a2030, haze: 0x2a3446, fog: 0x0c0f16, wall: 0x343a46, accent: 0xffb21a, far: 0x0b0d13, lamp: 0xffd2a0 },
+  ascent: { skyTop: 0x0c0610, skyBot: 0x8a1a16, haze: 0xc83a20, fog: 0x1a060a, wall: 0x3e2a2e, accent: 0xff2414, far: 0x10080b, lamp: 0xff8070 },
+  warden: { skyTop: 0x0a0408, skyBot: 0x7a1010, haze: 0xb02a14, fog: 0x1c0606, wall: 0x44282a, accent: 0xff2414, far: 0x12080a, lamp: 0xff6040 },
 };
 export { PAL };
 
@@ -105,6 +105,7 @@ export function buildWorld(L, ctx) {
     wall: M(P.wall, { rough: 0.9, map: tex.panel }), wallDk: M(0x0c0b0d, { rough: 0.9 }), pipe: M(0x4a4e58, { metal: 0.85, rough: 0.35 }),
     pipeRust: M(0x6b3018, { rough: 0.7, metal: 0.4 }), brass: M(0xc8923a, { metal: 0.85, rough: 0.3 }), glowA: M(P.accent, { glow: true }),
     win: M(0xffa040, { glow: true }), dark: M(0x08080a, { rough: 1 }), chain: M(0x5a5e68, { metal: 0.9, rough: 0.4 }),
+    bgGearA: M(0x4a3a26, { metal: 0.15, rough: 0.85 }), bgGearB: M(0x2c3038, { metal: 0.15, rough: 0.85 }), bgPipe: M(0x30343c, { metal: 0.3, rough: 0.7 }),
     belt: M(0xffffff, { map: tex.belt, rough: 0.7 }), crack: M(0xc8c0c0, { map: tex.crack, rough: 0.6, emissive: 0x3a1200 }),
     glass: M(0x9fe8ff, { additive: true, opacity: 0.12 }), sign: M(0xffffff, { map: tex.sign, rough: 0.6, emissive: 0x201400 }),
   };
@@ -213,8 +214,40 @@ export function buildWorld(L, ctx) {
       if (fx) fx.addEmitter({ type: 'smoke', x, y: b.y0 + hgt - 3.5, z, rate: light ? 0.6 : 1.6 });
     }
   }
+  // open air (the Ascent, the Warden's summit): a scaffold silhouetted against the storm, the fortress heart behind
+  const open = L.id === 'ascent' || L.id === 'warden';
+  if (open) {
+    const r = (() => { let a = 31 + L.id.length * 5; return () => ((a = (a * 16807) % 2147483647) / 2147483647); })();
+    const sz = -3.6, beam = M(0x14121a, { rough: 0.8 }), red = M(0xff2414, { glow: true });
+    const lamps = [];
+    for (let x = b.x0 - 6; x <= b.x1 + 6; x += 6.5) {
+      B.add(beam, place(box(0.5, H + 30, 0.5), x, my, sz));
+      const lamp = new THREE.Mesh(new THREE.SphereGeometry(0.16, 8, 6), red); lamp.position.set(x, b.y1 + 1.5 + r() * 3, sz + 0.4); g.add(lamp); lamps.push(lamp);
+    }
+    for (let y = b.y0; y < b.y1 + 8; y += 7) {
+      B.add(beam, place(box(W + 24, 0.3, 0.35), mx, y, sz));
+      for (let x = b.x0 - 6; x < b.x1 + 6; x += 6.5) { const len = Math.hypot(6.5, 7); B.add(beam, place(box(len, 0.14, 0.14), x + 3.25, y + 3.5, sz - 0.1, Math.atan2(7, 6.5) * (Math.round((x + y) / 6.5) % 2 ? 1 : -1))); }
+    }
+    dyn.push((dt, s, t) => { lamps.forEach((l, i) => { l.visible = Math.sin(t * 2.2 + i * 1.7) > 0.2; }); });
+    // the fortress heart: a tower with crimson bands on the horizon
+    const heart = new THREE.Group(); heart.position.set(mx + (L.id === 'warden' ? 0 : 10), b.y0 - 10, -46); g.add(heart);
+    const tower = new THREE.Mesh(new THREE.CylinderGeometry(5, 8, H + 70, 14), M(0x0e0a0e, { rough: 1 })); tower.position.y = (H + 70) / 2; heart.add(tower);
+    const bands = [];
+    for (let k = 0; k < 6; k++) { const bd = new THREE.Mesh(new THREE.CylinderGeometry(5.3 + k * 0.2, 5.3 + k * 0.2, 0.8, 18, 1, true), M(0xff2414, { glow: true })); bd.position.y = 14 + k * ((H + 50) / 6); heart.add(bd); bands.push(bd); }
+    const crown = new THREE.Mesh(new THREE.SphereGeometry(4, 16, 12), M(0xff3a20, { additive: true, opacity: 0.5 })); crown.position.y = H + 70; heart.add(crown);
+    dyn.push((dt, s, t) => { bands.forEach((bd, k) => { const v = 0.5 + 0.5 * Math.sin(t * 2 - k * 0.8); bd.material.color.setRGB(1, 0.14 * v, 0.08 * v); }); crown.scale.setScalar(1 + 0.08 * Math.sin(t * 3)); });
+    // a pale moon behind the clouds
+    const moon = new THREE.Mesh(new THREE.CircleGeometry(7, 32), M(0xffd8c8, { glow: true })); moon.position.set(mx - W * 0.6, my + H * 0.5 + 6, -66); g.add(moon);
+    if (L.id === 'warden') {                                                                       // chains that hold the Warden's platform
+      for (const x of [10.6, 17.4]) for (let k = 0; k < 12; k++) B.add(mat.chain, place(new THREE.TorusGeometry(0.16, 0.05, 5, 8), x, 16 + k * 0.36, -0.4, 0, k % 2 ? Math.PI / 2 : 0));
+      const reactor = new THREE.Mesh(new THREE.CylinderGeometry(2.2, 2.6, 26, 18), M(0x2a1418, { rough: 0.6, metal: 0.3 })); reactor.position.set(14, 8, -2.6); g.add(reactor);
+      const coreGlow = new THREE.Mesh(new THREE.CylinderGeometry(2.25, 2.25, 22, 18, 1, true), M(0xff2414, { additive: true, opacity: 0.25 })); coreGlow.position.set(14, 8, -2.6); g.add(coreGlow);
+      for (let y = -3; y < 21; y += 3) B.add(mat.steelDk, place(new THREE.TorusGeometry(2.3, 0.14, 6, 24), 14, y, -2.6, 0, 0, Math.PI / 2));
+      dyn.push((dt, s, t) => { coreGlow.material.opacity = 0.18 + 0.12 * Math.sin(t * (3 + (s.boss ? s.boss.phase * 1.5 : 0))); });
+    }
+  }
   // the fortress wall behind the gameplay plane: panels, pillars, pipes, turning gears, furnace windows, chains
-  {
+  if (!open) {
     const wz = -4.2, wall = place(box(W + 40, H + 30, 0.4), mx, my, wz - 0.2);
     const uv = wall.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) * (W + 40) / 6, uv.getY(i) * (H + 30) / 6);
     B.add(mat.wall, wall);
@@ -224,14 +257,14 @@ export function buildWorld(L, ctx) {
       for (let y = b.y0; y < b.y1 + 8; y += 8) B.add(mat.rivet, place(new THREE.SphereGeometry(0.08, 6, 4), x, y, wz + 0.88));
     }
     for (let y = b.y0 + 3; y < b.y1 + 6; y += 9) {                                                      // horizontal pipes
-      B.add(mat.pipe, place(new THREE.CylinderGeometry(0.28, 0.28, W + 40, 10), mx, y, wz + 1.0, Math.PI / 2));
+      B.add(mat.bgPipe, place(new THREE.CylinderGeometry(0.28, 0.28, W + 40, 10), mx, y, wz + 1.0, Math.PI / 2));
       B.add(mat.pipeRust, place(new THREE.CylinderGeometry(0.16, 0.16, W + 40, 8), mx, y + 0.7, wz + 1.2, Math.PI / 2));
       for (let x = b.x0 - 10; x < b.x1 + 10; x += 5 + r() * 4) B.add(mat.brass, place(new THREE.CylinderGeometry(0.34, 0.34, 0.25, 10), x, y, wz + 1.0, Math.PI / 2));
     }
     const nGears = Math.max(4, Math.round(W * H / 90));
     for (let i = 0; i < nGears; i++) {
-      const rr = 0.9 + r() * 2.4, gm = new THREE.Mesh(gearGeo(rr, 0.3, 8 + Math.round(rr * 4)), r() < 0.5 ? mat.pipe : mat.brass);
-      gm.position.set(b.x0 + r() * W, b.y0 + r() * H, wz + 0.6 + r() * 0.6); g.add(gm);
+      const rr = 0.9 + r() * 2.4, gm = new THREE.Mesh(gearGeo(rr, 0.3, 8 + Math.round(rr * 4)), r() < 0.5 ? mat.bgGearB : mat.bgGearA);
+      gm.position.set(b.x0 + r() * W, b.y0 + r() * H, wz + 0.5 + r() * 0.4); g.add(gm);
       const sp = (r() < 0.5 ? -1 : 1) * (0.2 + r() * 0.5) / rr; dyn.push(dt => (gm.rotation.z += dt * sp));
     }
     const furnaces = [];
@@ -259,7 +292,7 @@ export function buildWorld(L, ctx) {
     const rim = new THREE.DirectionalLight(0x6fa8ff, 1.1); rim.position.set(6, 8, -10); g.add(rim);
     const n = Math.min(4, Math.max(2, Math.round(W * H / 260)));
     for (let i = 0; i < n; i++) {
-      const pl = new THREE.PointLight(P.accent, 70, 20, 1.5); pl.position.set(b.x0 + (i + 0.5) * W / n, b.y0 + (i % 2 ? 0.66 : 0.33) * H, -1.5); g.add(pl); lights.push(pl);
+      const pl = new THREE.PointLight(P.accent, 38, 18, 1.5); pl.position.set(b.x0 + (i + 0.5) * W / n, b.y0 + (i % 2 ? 0.66 : 0.33) * H, 0.8); g.add(pl); lights.push(pl);
     }
   }
   const amb = new THREE.HemisphereLight(0x9aa0b8, 0x3a2018, light ? 2.6 : 1.5); g.add(amb);
@@ -440,7 +473,7 @@ export function buildWorld(L, ctx) {
   function update(dt, s, t) {
     for (const f of dyn) f(dt, s, t);
     skyMat.uniforms.time.value = t; lavaMat.uniforms.time.value = t;
-    if (L.id === 'ascent') {                                     // storm: a soft sky flash now and then (never faster than ~1 a second)
+    if (L.id === 'ascent' || L.id === 'warden') {               // storm: a soft sky flash now and then (never faster than ~1 a second)
       const k = (t % 7.3) / 7.3; skyMat.uniforms.flash.value = k > 0.95 ? (1 - (k - 0.95) / 0.05) * 0.6 : 0;
     }
     for (const c of conveyors) c.tex.offset.x = (c.tex.offset.x + dt * Math.abs(c.speed) / 0.8) % 1;

@@ -64,6 +64,11 @@ export async function createGame(p0, opts = {}) {
   const fx = createFx(light); root.add(fx.group);
   const hero = buildHero(M), warden = buildWarden(M), lilly = buildLilly(M);
   root.add(hero.root, warden.root, lilly.root);
+  const heldDrum = (() => {
+    const g = new THREE.Group(), body = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 0.9, 18), M(0x3a3e48, { metal: 0.6, rough: 0.35 })); body.rotation.x = Math.PI / 2; g.add(body);
+    for (const z of [-0.3, 0, 0.3]) { const b = new THREE.Mesh(new THREE.TorusGeometry(0.43, 0.05, 6, 20), M(0xff7a1a, { glow: true })); b.position.z = z; g.add(b); }
+    g.scale.setScalar(1.25); g.visible = false; root.add(g); return g;
+  })();
   const heroLight = light ? null : new THREE.PointLight(0xffd2b0, 26, 7, 1.4); if (heroLight) root.add(heroLight);
   hero.root.scale.setScalar(1.05);
   const cage = (() => {
@@ -116,19 +121,21 @@ export async function createGame(p0, opts = {}) {
   // ------------------------------------------------------------------ the cast: where the Warden and Lilly stand in each stage
   function placeCast(reset) {
     const L = G.sim.L, id = L.id;
-    warden.root.visible = lilly.root.visible = true; cage.visible = false;
+    warden.root.visible = lilly.root.visible = true;
     warden.root.scale.setScalar(1); warden.root.position.z = 0;
-    if (reset) { G.wardenOff.x = G.wardenOff.y = 0; G.lillyMode = id === 'warden' ? 'cage' : id === 'machine' ? 'cage' : 'held'; G.heroOverride = null; }
-    if (id === 'foundry') { warden.root.position.set(L.warden.x + G.wardenOff.x, L.warden.y + G.wardenOff.y, -0.1); G.lillyPos = { x: L.lilly.x, y: L.lilly.y, z: 0 }; }
-    else if (id === 'machine') {
-      warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -2.6); warden.root.scale.setScalar(0.9);
-      G.lillyPos = { x: L.lilly.x, y: L.lilly.y - 2.2, z: -2.6 }; cage.visible = true;
-    } else if (id === 'ascent') {
-      warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -0.6); G.lillyPos = { x: 16.6, y: 70, z: -0.4 }; cage.visible = true;
-    } else {
-      warden.root.position.set(L.boss.x + G.wardenOff.x, L.boss.y + G.wardenOff.y, -0.2); G.lillyPos = { x: L.lilly.x, y: L.lilly.y, z: 0 }; cage.visible = true;
+    if (reset) {
+      G.wardenOff.x = G.wardenOff.y = 0; G.lillyMode = id === 'warden' || id === 'machine' ? 'cage' : 'held'; G.heroOverride = null;
+      if (id === 'foundry') G.lillyPos = { x: L.lilly.x, y: L.lilly.y, z: 0 };
+      else if (id === 'machine') G.lillyPos = { x: L.lilly.x, y: L.lilly.y - 2.2, z: -2.6 };
+      else if (id === 'ascent') G.lillyPos = { x: 16.6, y: 70, z: -0.4 };
+      else G.lillyPos = { x: L.lilly.x, y: L.lilly.y, z: 0 };
+      cage.visible = id !== 'foundry';
+      cage.position.set(G.lillyPos.x, G.lillyPos.y, G.lillyPos.z);
     }
-    cage.position.set(G.lillyPos.x, G.lillyPos.y, G.lillyPos.z);
+    if (id === 'foundry') warden.root.position.set(L.warden.x + G.wardenOff.x, L.warden.y + G.wardenOff.y, -0.1);
+    else if (id === 'machine') { warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -2.6); warden.root.scale.setScalar(0.9); }
+    else if (id === 'ascent') warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -0.6);
+    else { warden.root.position.set(L.boss.x + G.wardenOff.x, L.boss.y + G.wardenOff.y, -0.2); warden.root.scale.setScalar(1.15); }
   }
 
   // ------------------------------------------------------------------ flow
@@ -261,7 +268,7 @@ export async function createGame(p0, opts = {}) {
     const L = G.sim.L, h = G.sim.hero;
     return { dur: 9.5, skip: false, update(t, dt) {
       G.letterbox = Math.min(1, t * 2);
-      G.camOverride = t < 5 ? { x: 14, y: 9, z: 1 } : { x: lerp(14, h.x, ease((t - 5) / 1.2)), y: lerp(9, h.y + 2.5, ease((t - 5) / 1.2)), z: lerp(1, 0.75, ease((t - 5) / 1.5)) };
+      G.camOverride = t < 5 ? { x: 14, y: 9, z: 1 } : { x: lerp(14, h.x + 0.4, ease((t - 5) / 1.6)), y: lerp(9, h.y + 1.3, ease((t - 5) / 1.6)), z: lerp(1, t > 7 ? 0.32 : 0.6, ease((t - 5) / 2.6)) };
       const u = Math.min(1, t / 2.2);
       G.wardenMode = 'defeat'; G.wardenU = u; G.wardenOff.y = -u * u * 13.6;
       if (!this.f0) { this.f0 = 1; sfx('roar', 0.8); G.shake = 1.0; }
@@ -412,7 +419,7 @@ export async function createGame(p0, opts = {}) {
       if (any('KeyR')) choose = 'restart';
       if (!choose) return;
       sfx('select', 0.4);
-      if (choose === 'resume') { G.screen = 'play'; G.mode = 'play'; }
+      if (choose === 'resume') { G.screen = 'play'; G.mode = 'play'; G.resumeT = G.t; }
       else if (choose === 'restart') { G.lives = Math.max(G.lives, 1); transition(() => beginStage()); G.screen = 'play'; }
       else if (choose === 'quit') transition(() => { toTitle(); toMenu(); });
       G.force = true; return;
@@ -423,7 +430,7 @@ export async function createGame(p0, opts = {}) {
       if (any('KeyR')) choose = 'retry';
       if (!choose) return;
       sfx('select', 0.4);
-      if (choose === 'retry') { G.score = 0; G.sent = false; G.lives = DIFFICULTY[G.difficulty].lives; G.arcade = false; transition(() => beginStage()); }
+      if (choose === 'retry') { G.score = 0; G.sent = false; G.lives = DIFFICULTY[G.difficulty].lives; transition(() => beginStage()); }   // an arcade continue: the score starts again
       else if (choose === 'results') finishRun(false);
       else transition(() => { toTitle(); toMenu(); });
       G.force = true; return;
@@ -501,6 +508,13 @@ export async function createGame(p0, opts = {}) {
       else if (L.id === 'machine') { wm = (Math.floor(G.t / 4) % 2 === 0) ? 'pound' : 'idle'; }
     }
     placeCast(false);
+    // the drum he lifts before a throw (between his fists, above his head)
+    heldDrum.visible = (wm === 'grab' || (wm === 'tell' && false)) && warden.root.visible;
+    if (heldDrum.visible) {
+      const wp = warden.root.position, sc = warden.root.scale.x, lift = Math.min(1, wu * 1.3);
+      heldDrum.position.set(wp.x + 0.9 * sc * (L.id === 'warden' ? (h.x < wp.x ? -1 : 1) : 1), wp.y + (2.6 + 2.6 * lift) * sc, wp.z + 0.6);
+      heldDrum.rotation.z = G.t * 2;
+    }
     warden.update(dt, { mode: wm, t: G.t, u: wu, anger, face: L.id === 'warden' ? (h.x < warden.root.position.x ? -1 : 1) : 1 });
     // Lilly
     let lm = G.lillyMode;
@@ -510,7 +524,6 @@ export async function createGame(p0, opts = {}) {
     lilly.root.position.set(lp.x, lp.y + (cage.visible && L.id !== 'warden' ? 0.1 : 0) + (L.id === 'warden' && s.lilly !== 'free' && lm !== 'run' && lm !== 'hug' ? 0.08 : 0), (lp.z || 0) + 0.02);
     if (L.id === 'warden' && (lm === 'free')) lilly.root.position.y = L.lilly.y + 1.95;
     lilly.update(dt, { mode: lm, t: G.t, face: lm === 'run' || lm === 'hug' ? -1 : (h.x < lp.x ? -1 : 1) });
-    if (L.id === 'warden') { cage.position.set(L.lilly.x, L.lilly.y, 0); }
   }
 
   // ------------------------------------------------------------------ the frame
@@ -534,7 +547,7 @@ export async function createGame(p0, opts = {}) {
       if (G.attract && G.bot) {
         acc += dt; while (acc >= DT) { acc -= DT; stepSim(s, botInput(G.bot, s)); onAttractEvents(s); if (s.result || s.t > 70) { G.sim = null; startAttract(); break; } }
       } else if (G.mode === 'play' && G.screen === 'play') {
-        if (any('KeyP') || padPressed(9)) { G.screen = 'pause'; G.sel = 0; G.items = [{ id: 'resume', label: 'RESUME' }, { id: 'restart', label: 'RESTART STAGE' }, { id: 'quit', label: 'QUIT TO MENU' }]; sfx('pause', 0.4); }
+        if ((any('KeyP') || padPressed(9)) && G.t - (G.resumeT || -1) > 0.2) { G.screen = 'pause'; G.sel = 0; G.items = [{ id: 'resume', label: 'RESUME' }, { id: 'restart', label: 'RESTART STAGE' }, { id: 'quit', label: 'QUIT TO MENU' }]; sfx('pause', 0.4); }
         else if (G.hitstop > 0) G.hitstop -= dt;
         else {
           acc += dt; G.runT += dt;
@@ -547,7 +560,7 @@ export async function createGame(p0, opts = {}) {
           if (s.result === 'clear') { const c = clearCut(s.id); if (c) startCut(c); else tallyThenNext(); }
           else if (s.result === 'bossDefeat') { music(null); startCut(bossDefeatCut()); }
           else if (s.result === 'gameover') { G.lives = 0; G.showHud = false; G.screen = 'gameover'; G.sel = 0; music(null); sfx('gameover', 0.6);
-            G.items = [{ id: 'retry', label: 'CONTINUE (PRACTICE)' }, { id: 'results', label: 'SEE RESULTS' }, { id: 'quit', label: 'MAIN MENU' }]; G.score += s.score; }
+            G.items = [{ id: 'retry', label: 'CONTINUE' }, { id: 'results', label: 'SEE RESULTS' }, { id: 'quit', label: 'MAIN MENU' }]; G.score += s.score; }
           // Lilly speaks up now and then
           G.lineT -= dt;
           if (G.lineT <= 0 && s.hero.state === 'play') { const ls = LINES[s.id]; say(ls[Math.floor(Math.random() * ls.length)], 2.2); G.lineT = 11 + Math.random() * 6; }
@@ -610,7 +623,7 @@ export async function createGame(p0, opts = {}) {
   p0.loading(0.45, 'building the foundry');
   await startAttract();
   music('title');
-  p0.hud('RAMPAGE: SAVE LILLY — rescue Lilly from the Warden.\nMove A/D or ←→ · climb W/S · jump SPACE · pause P · retry R\nController: stick + A · Phones: stick + JUMP\nClick or press any key for sound.');
+  if (!opts.noHudText) p0.hud('RAMPAGE: SAVE LILLY — rescue Lilly from the Warden.\nMove A/D or ←→ · climb W/S · jump SPACE · pause P · retry R\nController: stick + A · Phones: stick + JUMP\nClick or press any key for sound.');
   p0.loading(0.8, 'compiling the fortress');
   // warm every material once (stages compile again behind their wipes)
   try { await renderer.compileAsync(scene, cam); } catch (e) { /* ok */ }

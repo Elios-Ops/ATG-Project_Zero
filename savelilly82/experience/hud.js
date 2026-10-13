@@ -37,9 +37,9 @@ export function createHud(p0, cam, fonts, logo, light) {
     T(label, x + w / 2, y + h / 2 + 11 * k, 30, on ? '#ffffff' : COL.ink, 'center', true);
     if (sub) T(sub, x + w / 2, y + h + 22 * k, 17, COL.dim, 'center');
   }
-  function drawLogo(cx, cy, w) {
-    if (!logo) { TS('RAMPAGE', cx, cy, 96 * w / 900, COL.red, 'center', true); TS('SAVE LILLY', cx, cy + 60 * k, 48, COL.teal, 'center', true); return; }
-    const h = w * logo.height / logo.width; ctx.drawImage(logo, cx - w / 2, cy - h / 2, w, h);
+  function drawLogo(cx, top, w) {                         // top: where the logo's top edge goes
+    if (!logo) { TS('RAMPAGE', cx, top + 90 * k, 96 * w / 900, COL.red, 'center', true); TS('SAVE LILLY', cx, top + 150 * k, 48, COL.teal, 'center', true); return 160 * k; }
+    const h = w * logo.height / logo.width; ctx.drawImage(logo, cx - w / 2, top, w, h); return h;
   }
   function vignette(a = 0.55) {
     const g = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.25, W / 2, H / 2, Math.max(W, H) * 0.75);
@@ -66,9 +66,9 @@ export function createHud(p0, cam, fonts, logo, light) {
   function title(m) {
     vignette(0.65);
     ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.fillRect(0, 0, W, H);
-    drawLogo(W / 2, H * (portrait ? 0.26 : 0.32), Math.min(W * 0.86, 900 * k));
-    if (Math.sin(m.t * 4.4) > -0.2) TS(m.touch ? 'TAP TO START' : 'PRESS START', W / 2, H * (portrait ? 0.56 : 0.66), 44, COL.gold, 'center', true);
-    T('SPACE  ·  CONTROLLER A  ·  CLICK', W / 2, H * (portrait ? 0.6 : 0.71), 17, COL.dim, 'center');
+    const lw = Math.min(W * 0.86, 820 * k, H * 1.05), lh = drawLogo(W / 2, H * (portrait ? 0.12 : 0.07), lw), ly = H * (portrait ? 0.12 : 0.07) + lh;
+    if (Math.sin(m.t * 4.4) > -0.2) TS(m.touch ? 'TAP TO START' : 'PRESS START', W / 2, ly + 62 * k, 44, COL.gold, 'center', true);
+    T('SPACE  ·  CONTROLLER A  ·  CLICK', W / 2, ly + 96 * k, 17, COL.dim, 'center');
     if (m.table && m.table.length) {
       const pw = 330 * k, px = portrait ? W / 2 - pw / 2 : W - pw - 30 * k, py = portrait ? H * 0.68 : H * 0.35, ph = (54 + Math.min(5, m.table.length) * 34) * k;
       panel(px, py, pw, ph, 0.75);
@@ -80,10 +80,10 @@ export function createHud(p0, cam, fonts, logo, light) {
   }
   function menu(m) {
     vignette(0.7); ctx.fillStyle = 'rgba(0,0,0,0.45)'; ctx.fillRect(0, 0, W, H);
-    drawLogo(W / 2, H * 0.16, Math.min(W * 0.6, 560 * k));
-    const items = m.items, bw = Math.min(W * 0.7, 440 * k), bh = 58 * k, x = W / 2 - bw / 2, y0 = H * (portrait ? 0.32 : 0.36);
-    items.forEach((it, i) => button(it.id, it.label, x, y0 + i * (bh + 18 * k), bw, bh, i === m.sel));
-    const it = items[m.sel]; if (it && it.desc) T(it.desc, W / 2, y0 + items.length * (bh + 18 * k) + 30 * k, 19, COL.dim, 'center');
+    const lh = drawLogo(W / 2, 16 * k, Math.min(W * 0.6, 470 * k, H * 0.55));
+    const items = m.items, bw = Math.min(W * 0.7, 440 * k), bh = 54 * k, x = W / 2 - bw / 2, y0 = 16 * k + lh + 26 * k;
+    items.forEach((it, i) => button(it.id, it.label, x, y0 + i * (bh + 14 * k), bw, bh, i === m.sel));
+    const it = items[m.sel]; if (it && it.desc) T(it.desc, W / 2, y0 + items.length * (bh + 14 * k) + 26 * k, 19, COL.dim, 'center');
     footer(m.touch ? 'TAP TO CHOOSE' : '↑ ↓ CHOOSE · ← → CHANGE · SPACE CONFIRM · BACKSPACE BACK');
     if (m.back) button('back', 'BACK', 24 * k, H - 86 * k, 150 * k, 50 * k, false);
   }
@@ -132,6 +132,7 @@ export function createHud(p0, cam, fonts, logo, light) {
 
   function play(m) {
     const s = m.sim; if (!s) return;
+    ctx.save(); if (portrait) ctx.translate(0, 70 * k);           // phones: clear the city's bar at the top
     // top-left: score and lives
     panel(16 * k, 14 * k, 270 * k, 88 * k, 0.7);
     T('SCORE', 30 * k, 40 * k, 16, COL.dim); T(fmt(m.score + s.score), 30 * k, 82 * k, 40, '#ffffff', 'left', true);
@@ -149,10 +150,13 @@ export function createHud(p0, cam, fonts, logo, light) {
       T(fmt(s.bonus), cx + cw - 20 * k, 76 * k, 30, s.bonus <= 1000 ? COL.red : COL.gold, 'right', true);
     }
     // top-right: keepsakes and gears
-    const rx = W - 16 * k - 210 * k; panel(rx, 14 * k, 210 * k, 74 * k, 0.7);
-    s.keeps.forEach((g2, i) => keepIcon(rx + 34 * k + i * 36 * k, 48 * k, 12 * k, g2));
-    gearIcon(rx + 150 * k, 48 * k, 13 * k); T('×' + s.gears, rx + 168 * k, 56 * k, 22, '#ffffff');
-    T(DIFFICULTY[m.difficulty].name, rx + 105 * k, 80 * k, 13, COL.dim, 'center');
+    if (!s.boss) {
+      const rx = W - 16 * k - 210 * k; panel(rx, 14 * k, 210 * k, 74 * k, 0.7);
+      s.keeps.forEach((g2, i) => keepIcon(rx + 34 * k + i * 36 * k, 48 * k, 12 * k, g2));
+      gearIcon(rx + 150 * k, 48 * k, 13 * k); T('×' + s.gears, rx + 168 * k, 56 * k, 22, '#ffffff');
+      T(DIFFICULTY[m.difficulty].name, rx + 105 * k, 80 * k, 13, COL.dim, 'center');
+    }
+    ctx.restore();
     // Overdrive timer
     const h = s.hero;
     if (h.gaunt > 0) {
@@ -228,9 +232,9 @@ export function createHud(p0, cam, fonts, logo, light) {
   function results(m) {
     const r = m.results; if (!r) return;
     vignette(0.6); ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.fillRect(0, 0, W, H);
-    TS(r.title, W / 2, H * 0.16, portrait ? 52 : 80, r.win ? COL.gold : COL.red, 'center', true);
-    if (r.sub) T(r.sub, W / 2, H * 0.16 + 44 * k, 22, COL.teal, 'center', true);
-    const pw = Math.min(W - 40 * k, 620 * k), ph = (110 + r.rows.length * 34) * k, px = W / 2 - pw / 2, py = H * 0.25;
+    TS(r.title, W / 2, H * 0.19, portrait ? 52 : 76, r.win ? COL.gold : COL.red, 'center', true);
+    if (r.sub) T(r.sub, W / 2, H * 0.19 + 40 * k, 22, COL.teal, 'center', true);
+    const pw = Math.min(W - 40 * k, 620 * k), ph = (110 + r.rows.length * 34) * k, px = W / 2 - pw / 2, py = H * 0.19 + 64 * k;
     panel(px, py, pw, ph, 0.85);
     r.rows.forEach((row, i) => { T(row[0], px + 30 * k, py + (44 + i * 34) * k, 21, COL.ink); T(row[1], px + pw - 30 * k, py + (44 + i * 34) * k, 21, row[2] || '#ffffff', 'right'); });
     T('FINAL SCORE', px + 30 * k, py + ph - 26 * k, 28, COL.amber, 'left', true); T(fmt(r.score), px + pw - 30 * k, py + ph - 24 * k, 40, '#ffffff', 'right', true);
