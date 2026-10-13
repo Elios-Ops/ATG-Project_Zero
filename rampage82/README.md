@@ -1,4 +1,4 @@
-# RAMPAGE — Lot #82 (production v0.1)
+# RAMPAGE — Lot #82 (production v0.2 · release candidate 1 — see RELEASE_RC1.md)
 
 **Status: local production build. Not published.** The live Lot #82 experience (ATG Gladiator Training Academy,
 `8619fc7c57b6039b`) is untouched; replacing it needs the owner's explicit approval.
@@ -24,8 +24,9 @@ rising crimson **Surge** up a spiral gauntlet along the interior walls, through 
 - **Attract mode**: the title runs a live AI demo climb (the same autopilot the tests prove), so players see the route.
 - **Multiplayer**: everyone climbs their own run; other players appear as glass contenders wherever they are.
 
-Files: `experience/rules.js` (pure rules: course, physics, hazards, Surge, scoring, autopilot), `experience/main.js`
-(renderer, camera, HUD, sound), `experience/experience.json`.
+Files: `experience/rules.js` (pure rules: course, physics, hazards, Surge, scoring, autopilot), `experience/game.js`
+(world, lighting, hazard feedback, camera, HUD, finish celebration, Contenders' Wall notes, CONQUEROR), `experience/gladiator.js`
+(the contender), `experience/hudfont.js` (bitmap OFL fonts), `experience/main.js` (entry), `experience/experience.json`.
 
 ## The exterior — production LODs
 
@@ -47,6 +48,7 @@ No vertex motion: bounds never change.
 
 ```sh
 node rampage82/tests/rules.test.mjs                               # course geometry, bots, Surge, scoring, determinism, autopilot
+PLAYWRIGHT=<playwright module> node rampage82/tests/devkit-finish.cjs <out>   # REAL finish line in the dev kit (test-only autopilot entry)
 PLAYWRIGHT=<playwright module> node rampage82/tests/devkit.cjs <out>          # official dev kit: start, play, results, retry, review, phone
 PLAYWRIGHT=<playwright module> node rampage82/tests/devkit-attract.cjs <out>  # attract-mode demo climb screenshots
 PLAYWRIGHT=<playwright module> node rampage82/tests/shader-check.cjs          # compile + time the lot shaders (P0Surface interface)
@@ -55,5 +57,6 @@ python rampage82/tools/audit_glb.py <lods_out>                    # budgets, bou
 python rampage82/tools/build_package.py --fonts <fonts> --lods <lods_out> --out <pkg>   # experience.zip + exterior/
 ```
 
-Private inputs stay outside this repository: the C006 `.blend`, the gladiator display art (derived from the owner's
-concept image) and the built GLBs. Fonts are fetched from Google Fonts (OFL 1.1) and shipped with their licences.
+Private inputs stay outside this repository: the C006 `.blend` and the built GLBs. The display art is original, rendered
+from the game's own gladiator by `tools/render_poster.cjs`. Fonts come from Google Fonts (OFL 1.1) and ship as bitmap
+atlases (`tools/make_font_atlas.py`, packages take no `.ttf`) with their licences.

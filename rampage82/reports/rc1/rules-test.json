@@ -1,0 +1,45 @@
+{
+  "checks": [
+    "56 pads, 20 hazards, crown at 53.20 m; all gaps jumpable (apex 1.81 m)",
+    "no-hazard bot finished in 46.8 s, score 95316, rank CHAMPION",
+    "hazard bot (no timing): eliminated at 42.8 m after 87.4 s, 18 hits, score 42774",
+    "hazard bot (cautious): FINISHED at 54.0 m after 118.9 s, 6 hits, score 86309",
+    "idle player caught by the Surge after 18.2 s, score 2474",
+    "finisher always outranks a non-finisher",
+    "deterministic"
+  ],
+  "ok": true,
+  "stages": [
+    "THE GATE",
+    "THE SHAFT",
+    "THE EVENT HORIZON"
+  ],
+  "calmEvents": [
+    [
+      "checkpoint",
+      11,
+      11.9
+    ],
+    [
+      "checkpoint",
+      23,
+      25.2
+    ],
+    [
+      "checkpoint",
+      34.2,
+      38
+    ],
+    [
+      "checkpoint",
+      42.6,
+      48
+    ],
+    [
+      "finish",
+      46.8,
+      53.2
+    ]
+  ]
+}
+{"attractAutopilot":"finished in 118.9 s, 6 hits, score 86309"}

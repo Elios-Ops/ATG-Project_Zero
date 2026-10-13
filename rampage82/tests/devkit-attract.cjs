@@ -4,7 +4,7 @@ const { chromium } = require(process.env.PLAYWRIGHT || 'playwright');
 const http = require('http'), fs = require('fs'), path = require('path');
 const ROOT = path.resolve(__dirname, '..', 'experience'), OUT = path.resolve(process.argv[2] || 'devkit-attract');
 fs.mkdirSync(OUT, { recursive: true });
-const types = { '.js': 'text/javascript', '.json': 'application/json', '.wav': 'audio/wav', '.ttf': 'font/ttf', '.txt': 'text/plain' };
+const types = { '.js': 'text/javascript', '.json': 'application/json', '.wav': 'audio/wav', '.png': 'image/png', '.txt': 'text/plain' };
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); res.setHeader('Cache-Control', 'no-store');
   const f = path.resolve(ROOT, '.' + decodeURIComponent(req.url.split('?')[0]));

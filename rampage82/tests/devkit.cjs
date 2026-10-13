@@ -5,7 +5,7 @@ const http = require('http'), fs = require('fs'), path = require('path');
 const ROOT = path.resolve(__dirname, '..', 'experience'), OUT = path.resolve(process.argv[2] || 'devkit-out');
 const SOFTWARE = process.argv.includes('--software');
 fs.mkdirSync(OUT, { recursive: true });
-const types = { '.js': 'text/javascript', '.json': 'application/json', '.wav': 'audio/wav', '.ttf': 'font/ttf', '.txt': 'text/plain' };
+const types = { '.js': 'text/javascript', '.json': 'application/json', '.wav': 'audio/wav', '.png': 'image/png', '.txt': 'text/plain' };
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); res.setHeader('Cache-Control', 'no-store');
   const f = path.resolve(ROOT, '.' + decodeURIComponent(req.url.split('?')[0]));
@@ -31,6 +31,11 @@ async function run(browser, label, size) {
   await page.waitForTimeout(16000); await shot(page, `${label}-04-results`);
   r.final = await snap(page);
   await page.evaluate(() => devkit.press('KeyR', 80)); await page.waitForTimeout(600); await shot(page, `${label}-05-retry`);
+  // multiplayer + a dropped connection: more contenders join, the link blinks, the run must carry on without errors
+  await page.evaluate(() => devkit.players(4)); await page.evaluate(() => devkit.key('KeyD', true)); await page.waitForTimeout(1500);
+  await page.evaluate(() => devkit.drop()); await page.waitForTimeout(2500); await page.evaluate(() => devkit.key('KeyD', false));
+  await shot(page, `${label}-06-multiplayer-reconnect`);
+  r.afterReconnect = await page.evaluate(() => ({ errors: devkit.errors, players: devkit.room?.players?.length, log: devkit.console.slice(-6) }));
   r.review = await page.evaluate(() => devkit.review(14));
   await ctx.close(); return r;
 }

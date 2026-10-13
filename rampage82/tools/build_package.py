@@ -1,7 +1,7 @@
 """Assemble RAMPAGE's Project 0 packages locally (nothing is uploaded).
   python rampage82/tools/build_package.py --fonts <dir with anton/ and oswald/> --lods <dir with lod0/1/2.glb> --out <dir>
 Produces <out>/experience/ + experience.zip (the playable game) and <out>/exterior/ (LODs, lot.json, shaders, manifest).
-Fonts: Anton and Oswald, SIL Open Font License 1.1 (github.com/google/fonts, ofl/anton and ofl/oswald), shipped with their OFL.txt.
+Fonts: Anton and Oswald, SIL Open Font License 1.1 (github.com/google/fonts, ofl/anton and ofl/oswald), shipped as bitmap atlases with their OFL.txt.
 Sounds: synthesised by make_sounds.py (no third-party audio)."""
 import argparse, hashlib, json, os, shutil, subprocess, sys, zipfile
 
@@ -11,10 +11,13 @@ a = ap.parse_args()
 exp_src, exp_out, ext_out = os.path.join(ROOT, 'experience'), os.path.join(a.out, 'experience'), os.path.join(a.out, 'exterior')
 for d in (exp_out, ext_out): shutil.rmtree(d, ignore_errors=True)
 os.makedirs(os.path.join(exp_out, 'assets')); os.makedirs(ext_out)
-for f in ('main.js', 'rules.js', 'experience.json'): shutil.copy(os.path.join(exp_src, f), exp_out)
+for f in sorted(os.listdir(exp_src)):
+    if f.endswith('.js') or f == 'experience.json': shutil.copy(os.path.join(exp_src, f), exp_out)
 assets = os.path.join(exp_out, 'assets')
-shutil.copy(os.path.join(a.fonts, 'anton', 'Anton-Regular.ttf'), assets); shutil.copy(os.path.join(a.fonts, 'anton', 'OFL.txt'), os.path.join(assets, 'OFL-Anton.txt'))
-shutil.copy(os.path.join(a.fonts, 'oswald', 'Oswald[wght].ttf'), os.path.join(assets, 'Oswald.ttf')); shutil.copy(os.path.join(a.fonts, 'oswald', 'OFL.txt'), os.path.join(assets, 'OFL-Oswald.txt'))
+# fonts ship as pre-rendered bitmap atlases (packages accept no .ttf) together with their OFL licences
+shutil.copy(os.path.join(a.fonts, 'anton', 'OFL.txt'), os.path.join(assets, 'OFL-Anton.txt'))
+shutil.copy(os.path.join(a.fonts, 'oswald', 'OFL.txt'), os.path.join(assets, 'OFL-Oswald.txt'))
+subprocess.run([sys.executable, os.path.join(HERE, 'make_font_atlas.py'), a.fonts, assets], check=True)
 subprocess.run([sys.executable, os.path.join(HERE, 'make_sounds.py'), assets], check=True)
 zpath = os.path.join(a.out, 'experience.zip')
 with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as z:

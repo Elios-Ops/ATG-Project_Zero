@@ -35,7 +35,7 @@ const PLAN = [
   // STAGE 3 — THE EVENT HORIZON (35–53 m): everything at once beside the energy walls, then the crown
   ['pad', 27, 1.0, 8.6, 'laser'], ['crumble', 26, 1.0, 8.4], ['move', 31, .95, 8.7], ['pad', 30, 1.0, 8.6, 'fire'],
   ['pad', 26, 1.0, 8.3, 'sweep'], ['crumble', 25, 1.0, 8.7], ['pad', 26, 1.05, 8.6, 'laser'], ['move', 31, 1.0, 8.6],
-  ['pad', 30, 1.0, 8.5, 'crush'], ['crumble', 25, 1.0, 8.8], ['pad', 26, 1.05, 8.6, 'fire'], ['pad', 27, 1.05, 8.4, 'laser'],
+  ['pad', 30, 1.0, 8.5, 'crush'], ['cp', 25, 1.0, 8.8], ['pad', 26, 1.05, 8.6, 'fire'], ['pad', 27, 1.05, 8.4, 'laser'],
   ['crumble', 25, 1.0, 8.7], ['pad', 26, 1.05, 8.6, 'sweep'], ['finish', 40, 1.0, 5.6],
 ];
 export const STAGES = [
@@ -45,7 +45,7 @@ export const STAGES = [
 ];
 export function buildCourse() {
   const pads = [], hazards = [];
-  let a = -100, y = 0.1;                  // start beside the east entrance (angle ~0 faces +X); spiral up from there
+  let a = 0, y = 0.1;                     // start pad just inside the east entrance (angle 0 faces +X, the ring road)
   PLAN.forEach(([kind, da, rise, r, hz], i) => {
     a += da; y += rise;
     const rad = a * Math.PI / 180;
