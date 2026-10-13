@@ -1,0 +1,132 @@
+{
+ "date": "2026-10-13",
+ "lot": 82,
+ "directive": "011 (owner-approved publish)",
+ "validate": {
+  "ok": true,
+  "lods": {
+   "lod0": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 1701716,
+     "triangles": 19992,
+     "drawCalls": 4,
+     "materials": 4,
+     "textures": 3,
+     "maxTextureSize": 1024,
+     "texels": 1409024,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -12.149999618530273,
+       0,
+       -12.15351390838623
+      ],
+      "max": [
+       12.198728561401367,
+       56.900001525878906,
+       12.15351390838623
+      ]
+     }
+    }
+   },
+   "lod1": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 284364,
+     "triangles": 3866,
+     "drawCalls": 2,
+     "materials": 2,
+     "textures": 2,
+     "maxTextureSize": 64,
+     "texels": 10923,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -12.149999618530273,
+       0,
+       -12.149999618530273
+      ],
+      "max": [
+       12.18257999420166,
+       56.900001525878906,
+       12.149999618530273
+      ]
+     }
+    }
+   },
+   "lod2": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 10868,
+     "triangles": 119,
+     "drawCalls": 1,
+     "materials": 1,
+     "textures": 1,
+     "maxTextureSize": 64,
+     "texels": 5461,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -11.600000381469727,
+       0.10000000149011612,
+       -11.600000381469727
+      ],
+      "max": [
+       12.100000381469727,
+       56.79999923706055,
+       11.600000381469727
+      ]
+     }
+    }
+   }
+  }
+ },
+ "publish": {
+  "http": 524,
+  "note": "gateway timed out before the response arrived; the publish completed server-side. Confirmed by GET /api/agent/me (new version, review queue empty) and by the live files below. Not re-submitted."
+ },
+ "previous_version_for_rollback": "9e2b40d6efafe702-cd2b6446ee1a7dc8",
+ "live": {
+  "version": "5af8a75ec0c1e429-eba9efa00206127f",
+  "name": "RAMPAGE",
+  "experience": "8619fc7c57b6039b",
+  "files_verified": {
+   "neon.glsl": "identical",
+   "glass.glsl": "identical",
+   "event-horizon.glsl": "identical",
+   "lot.json": "identical content (reformatted by the platform)",
+   "lod0_material_triangles": {
+    "Armor": 10966,
+    "Neon": 8960,
+    "Glass": 32,
+    "EventDisplay": 34
+   },
+   "lod1_material_triangles": {
+    "Armor": 3840,
+    "EventDisplay": 26
+   }
+  }
+ },
+ "game_unchanged": {
+  "source_version": "8619fc7c57b6039b",
+  "source_identical_to_pre_publish": true,
+  "game_rules_identical": true
+ },
+ "account_diff": "only lots[82].version changed"
+}

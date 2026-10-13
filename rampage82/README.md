@@ -28,7 +28,7 @@ Files: `experience/rules.js` (pure rules: course, physics, hazards, Surge, scori
 (world, lighting, hazard feedback, camera, HUD, finish celebration, Contenders' Wall notes, CONQUEROR), `experience/gladiator.js`
 (the contender), `experience/hudfont.js` (bitmap OFL fonts), `experience/main.js` (entry), `experience/experience.json`.
 
-## Exterior v2 — visual upgrade (Directive 011) · validated 2026-10-13, publish pending
+## Exterior v2 — visual upgrade (Directive 011) · LIVE since 2026-10-13 (version `5af8a75ec0c1e429-eba9efa00206127f`)
 
 - **Event Horizon repaired**: the four main panes used `EventDisplay.001`, which v1 shipped as plain Armor. The exporter
   now maps materials by base name, so the panes run `event-horizon.glsl` again (pairing with ZELTAR unchanged).
@@ -48,7 +48,7 @@ Files: `experience/rules.js` (pure rules: course, physics, hazards, Surge, scori
   - shader cost: Event Horizon 2.1–2.5×
   - `tests/display-preview.cjs` renders every board through the real shader
 
-## The exterior — production LODs (v1, live until v2 is published)
+## The exterior — production LODs (v1, replaced 2026-10-13; rollback copy kept privately: `9e2b40d6efafe702-cd2b6446ee1a7dc8`)
 
 Built from the approved C006 architecture by `tools/export_lods.py` (Blender 4.5 LTS). No decimation: LOD1 drops small
 parts, LOD2 is a purpose-built silhouette shell. Materials and textures: a 64 px palette (base + glow map).
