@@ -1,0 +1,13 @@
+{
+  "entry": "main.js",
+  "name": "ZELTAR \u2014 Free Racing Preview",
+  "description": "All Things Gamed presents ZELTAR: a free solo time trial. Choose COMET or VIPER (clearly labeled visual-preview models), customize free paint, lights and fins, then race three laps through 36 ordered checkpoints. WASD/arrows drive, Shift boosts, Space launches, R retries, B returns to the Lab. Barrier hits add one second; higher points win. No purchases, prizes or multiplayer racing.",
+  "maxPlayers": 1,
+  "ui": "minimized",
+  "credits": [
+    {
+      "work": "Original ZelPods, ZEL Towers architecture, ZELTAR interface, course and sounds",
+      "by": "All Things Gamed"
+    }
+  ]
+}

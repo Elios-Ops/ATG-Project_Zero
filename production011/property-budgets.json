@@ -1,0 +1,156 @@
+[
+  {
+    "id": 82,
+    "width": 25,
+    "depth": 25,
+    "height": 57,
+    "shape": "tower",
+    "tier": "large",
+    "price": 87.222,
+    "position": {
+      "x": -248.5,
+      "z": -115.5
+    },
+    "altitude": 0,
+    "zone": "city",
+    "name": null,
+    "version": null,
+    "budgets": {
+      "lod0": {
+        "triangles": 87500,
+        "drawCalls": 14,
+        "materials": 4,
+        "textures": 8,
+        "maxTextureSize": 1024,
+        "texels": 8388608,
+        "skinnedMeshes": 2,
+        "bones": 64,
+        "animations": 8,
+        "fileBytes": 6553600,
+        "uploadBytes": 26214400
+      },
+      "lod1": {
+        "triangles": 12500,
+        "drawCalls": 4,
+        "materials": 2,
+        "textures": 2,
+        "maxTextureSize": 512,
+        "texels": 734003.2,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 1310720,
+        "uploadBytes": 8388608
+      },
+      "lod2": {
+        "triangles": 1330,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 1,
+        "maxTextureSize": 256,
+        "texels": 94371.84,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 278921,
+        "uploadBytes": 2097152
+      }
+    },
+    "experience": {
+      "version": "8619fc7c57b6039b",
+      "name": "ATG Gladiator Training Academy",
+      "maxPlayers": 8
+    },
+    "game": {
+      "price": 0,
+      "prize": 0,
+      "mode": "top",
+      "perPlayer": "once",
+      "winners": null,
+      "places": 3,
+      "lowWins": false,
+      "minSeconds": 10,
+      "paused": false,
+      "scoreUnit": "points",
+      "pool": 0,
+      "funded": true,
+      "city": 0,
+      "plays": 1,
+      "wins": 0,
+      "prizes": 0,
+      "paidOut": 0,
+      "winRate": 0,
+      "top": [
+        {
+          "id": 295,
+          "name": "Federico",
+          "score": 98942
+        }
+      ],
+      "weekEnds": 1792368000000,
+      "recent": [],
+      "ticketUntil": null,
+      "fee": 0.1
+    }
+  },
+  {
+    "id": 106,
+    "width": 25,
+    "depth": 25,
+    "height": 57,
+    "shape": "tower",
+    "tier": "large",
+    "price": 87.222,
+    "position": {
+      "x": -277.5,
+      "z": -115.5
+    },
+    "altitude": 0,
+    "zone": "city",
+    "name": null,
+    "version": null,
+    "budgets": {
+      "lod0": {
+        "triangles": 87500,
+        "drawCalls": 14,
+        "materials": 4,
+        "textures": 8,
+        "maxTextureSize": 1024,
+        "texels": 8388608,
+        "skinnedMeshes": 2,
+        "bones": 64,
+        "animations": 8,
+        "fileBytes": 6553600,
+        "uploadBytes": 26214400
+      },
+      "lod1": {
+        "triangles": 12500,
+        "drawCalls": 4,
+        "materials": 2,
+        "textures": 2,
+        "maxTextureSize": 512,
+        "texels": 734003.2,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 1310720,
+        "uploadBytes": 8388608
+      },
+      "lod2": {
+        "triangles": 1330,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 1,
+        "maxTextureSize": 256,
+        "texels": 94371.84,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 278921,
+        "uploadBytes": 2097152
+      }
+    },
+    "experience": null,
+    "game": null
+  }
+]

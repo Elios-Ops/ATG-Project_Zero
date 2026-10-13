@@ -1,0 +1,98 @@
+{
+  "lod0": {
+    "triangles": 1526,
+    "drawCalls": 4,
+    "materials": 4,
+    "textureSize": 1024,
+    "bytes": 186220,
+    "bounds": [
+      [
+        -12.0,
+        0.10000000149011612,
+        -12.0
+      ],
+      [
+        12.0,
+        56.83000183105469,
+        12.300000190734863
+      ]
+    ],
+    "budget": {
+      "triangles": 87500,
+      "drawCalls": 14,
+      "materials": 4,
+      "textures": 8,
+      "maxTextureSize": 1024,
+      "texels": 8388608,
+      "skinnedMeshes": 2,
+      "bones": 64,
+      "animations": 8,
+      "fileBytes": 6553600,
+      "uploadBytes": 26214400
+    }
+  },
+  "lod1": {
+    "triangles": 614,
+    "drawCalls": 2,
+    "materials": 2,
+    "textureSize": 512,
+    "bytes": 78252,
+    "bounds": [
+      [
+        -12.0,
+        0.10000000149011612,
+        -12.0
+      ],
+      [
+        12.0,
+        56.83000183105469,
+        12.300000190734863
+      ]
+    ],
+    "budget": {
+      "triangles": 12500,
+      "drawCalls": 4,
+      "materials": 2,
+      "textures": 2,
+      "maxTextureSize": 512,
+      "texels": 734003.2,
+      "skinnedMeshes": 0,
+      "bones": 0,
+      "animations": 0,
+      "fileBytes": 1310720,
+      "uploadBytes": 8388608
+    }
+  },
+  "lod2": {
+    "triangles": 518,
+    "drawCalls": 1,
+    "materials": 1,
+    "textureSize": 256,
+    "bytes": 58964,
+    "bounds": [
+      [
+        -12.0,
+        0.10000000149011612,
+        -12.0
+      ],
+      [
+        12.0,
+        56.83000183105469,
+        12.300000190734863
+      ]
+    ],
+    "budget": {
+      "triangles": 1330,
+      "drawCalls": 1,
+      "materials": 1,
+      "textures": 1,
+      "maxTextureSize": 256,
+      "texels": 94371.84,
+      "skinnedMeshes": 0,
+      "bones": 0,
+      "animations": 0,
+      "fileBytes": 278921,
+      "uploadBytes": 2097152
+    }
+  }
+}

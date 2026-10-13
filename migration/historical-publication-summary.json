@@ -1,0 +1,20 @@
+{
+  "historicalOnly": true,
+  "liveStateNotRequeriedDuringMigration": true,
+  "lot": 82,
+  "recordedAt": "2026-10-11T22:37:24.848527+00:00",
+  "finalStatusAtReceipt": "NOT_LIVE_EXPERIENCE_QUEUED_EXTERIOR_UNCONFIRMED_GAME_RULES_APPLIED",
+  "submission3220": {
+    "id": 3220,
+    "kind": "experience",
+    "lot": 82,
+    "status": "queued",
+    "reasons": [],
+    "categories": [],
+    "created": 1791757855463
+  },
+  "exteriorHTTPStatusAtDirective002": 524,
+  "experienceHTTPStatusAtDirective002": 202,
+  "settingsHTTPStatusAtDirective002": 200,
+  "note": "Do not duplicate submissions or retry ambiguous exterior timeouts. Preserve owner approval boundaries."
+}

@@ -1,0 +1,13 @@
+{
+  "originalBranch": "architecture/directive-010",
+  "availableHEAD": "bb5549c4d7bd0b106b135df06e5ff7c9e08de0ab",
+  "availableCommits": [
+    "bb5549c4d7bd0b106b135df06e5ff7c9e08de0ab ATG Project0: preserve tower references and audit architecture revision baseline",
+    "a0febcea40d51c231eddc2e2effbe52826629c03 ATG Project0: preserve Gladiator Gauntlet, ZELTAR and Event Horizon"
+  ],
+  "reportedCheckpoint": "ca8c630",
+  "checkpointObjectVerified": false,
+  "subsequentCommitsVerified": false,
+  "recovery": "Directive011 source, six GLBs, validation receipts, images and two Blender snapshots restored from saved archives; the ca8c630 Git object was not present in the restored workspace. No commit reconstruction or original history overwrite was performed.",
+  "publicHistory": "Fresh sanitized export because original history contains private binary assets even though credential scan found no secrets."
+}

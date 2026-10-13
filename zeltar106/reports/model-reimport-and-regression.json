@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "models": [
+    {
+      "name": "COMET",
+      "reimport": true,
+      "triangles": 992,
+      "drawCalls": 5,
+      "configs": 30
+    },
+    {
+      "name": "VIPER",
+      "reimport": true,
+      "triangles": 976,
+      "drawCalls": 5,
+      "configs": 30
+    },
+    {
+      "name": "TITAN",
+      "reimport": true,
+      "triangles": 1208,
+      "drawCalls": 5,
+      "configs": 30
+    }
+  ],
+  "freeConfigurations": 90,
+  "mechanicsIdentical": true,
+  "oldToNewProfiles": {
+    "COMET": "former COMET",
+    "VIPER": "former KITE",
+    "TITAN": "former VECTOR"
+  },
+  "originalFilesUnchanged": 109,
+  "exteriorGeometryIdentical": true,
+  "exteriorChanges": "Brand sign atlas and root name only; shaders/config unchanged"
+}

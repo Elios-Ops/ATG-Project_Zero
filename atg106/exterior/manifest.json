@@ -1,0 +1,10 @@
+{
+  "name": "ATG Pod Racer Tower \u2014 Event Horizon",
+  "description": "The Pod Racer Design Lab: choose a free original racing pod, customize its paint and lighting, then race the Aurora Circuit through ordered checkpoints. The upper display flows east toward the partner ATG tower using a shared clock; all geometry stays inside Lot 106.",
+  "credits": [
+    {
+      "work": "Original procedural architecture, pods and shaders",
+      "by": "All Things Gamed"
+    }
+  ]
+}

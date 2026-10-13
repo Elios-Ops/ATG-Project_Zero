@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "pod": "VECTOR",
+      "seconds": 25.241666666665875,
+      "penalty": 0,
+      "points": 97476,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 11.926507999999998
+    },
+    {
+      "pod": "COMET",
+      "seconds": 23.899999999999284,
+      "penalty": 0,
+      "points": 97610,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 5.440381000000002
+    },
+    {
+      "pod": "KITE",
+      "seconds": 26.808333333332452,
+      "penalty": 0,
+      "points": 97319,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 4.843171000000012
+    }
+  ],
+  "checks": [
+    "all three pods complete 36 ordered gates",
+    "braking",
+    "barriers and penalty scoring",
+    "no shortcut finish",
+    "energy recovery",
+    "finish immutable",
+    "retry reset",
+    "no purchase or prize calls"
+  ]
+}

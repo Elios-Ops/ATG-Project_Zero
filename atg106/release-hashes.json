@@ -1,0 +1,19 @@
+{
+  "exterior/racing-neon.glsl": "f40200fb37800564533fdd8ee8e066343a618d27ccd518d32d8dd9b6fdda571f",
+  "exterior/event-horizon.glsl": "2739cd30db5fc6cd952315d93ad7063c622f6b40695be58a29480bab0525e46d",
+  "exterior/lod0.glb": "c124509eca5f7776f6355a8e4dcf193cec96b9dc7a35e68ceac80966da35e13a",
+  "exterior/manifest.json": "97a77b0ee4e12e068663bc04bdaefe1471635dc3dcf83aafaea0c67eedbc90a0",
+  "exterior/lot.json": "55ddc4d74d8f073f0f59e1cc6b3e489999879655f4812d7dc013fb32fc272766",
+  "exterior/lod1.glb": "1ddb64c19215410e0dfedec9d71fe28d71c061ed082b7bed34e826d8f852ee84",
+  "exterior/lod2.glb": "c44f60765a94253dd4b6121f58b893936687a1f0c6a347b871f9e5fee89e0e9c",
+  "experience/rules.js": "2532803676407dad1828dfdcb293b767eaecaff02da8cd8f0116c86a4b197c21",
+  "experience/experience.json": "ac6e568658f2b78914ee90e77a26652c495c1ab56d094d4704b5e97d80aeab7c",
+  "experience/main.js": "f1070baef71c1a32ca107d01130a6c9cb168a368426de6fb70343bc9f04afd29",
+  "experience/assets/hit.wav": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+  "experience/assets/lap.wav": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+  "experience/assets/finish.wav": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+  "experience/assets/gate.wav": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+  "experience/assets/launch.wav": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+  "experience.zip": "8e2f2e7fd29ed24dd6314a9e9fbd2604e7eb86150225b301fa3b914c74af46ea",
+  "proposed-game-settings.json": "5aee2ec7c4ae438801b656c67f80c398fa48204e2030c06526e9cfa7af64d6f8"
+}

@@ -1,0 +1,9 @@
+{
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "shaderCompile": {
+    "plain": "passed (desktop GLSL wrapper)",
+    "event": "passed (desktop GLSL wrapper)",
+    "neon": "passed (desktop GLSL wrapper)"
+  },
+  "browserRuntime": false
+}

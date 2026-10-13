@@ -1,0 +1,24 @@
+[
+  {
+    "archive": "01-Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb.zip",
+    "archiveBytes": 95809719,
+    "archiveSHA256": "4158e2ee3a155df86899f248fa9d5d97e00819d980013396d44bf3dabf6b798e",
+    "model": "Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb",
+    "modelBytes": 126616112,
+    "modelSHA256": "fbb3fe64eb8d0e31d50d5ab8fe40c14faca461b750163f3cdfd4787f7cb96c6a",
+    "triangles": 3383146,
+    "materials": 1,
+    "images": 3
+  },
+  {
+    "archive": "02-Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb.zip",
+    "archiveBytes": 73869615,
+    "archiveSHA256": "0485c64eb249e7de15562ce7eb6a6784908085a7ecba3a5584e4bd65f8c6b54e",
+    "model": "Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb",
+    "modelBytes": 94095800,
+    "modelSHA256": "1847461dd80c9e93fc1cca1b119616671e0cac63f63b3f77f0572564931443cd",
+    "triangles": 2255138,
+    "materials": 1,
+    "images": 3
+  }
+]

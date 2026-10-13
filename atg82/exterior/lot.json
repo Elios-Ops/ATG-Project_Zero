@@ -1,0 +1,18 @@
+{
+  "materials": {
+    "Body": {
+      "glow": 0
+    },
+    "Glass": {
+      "glow": 0
+    },
+    "Neon": {
+      "surface": "neon.glsl",
+      "glow": 1.2
+    },
+    "EventDisplay": {
+      "surface": "event-horizon.glsl",
+      "glow": 0.65
+    }
+  }
+}

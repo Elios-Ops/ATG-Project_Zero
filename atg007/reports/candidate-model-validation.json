@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "reviewCandidate": true,
+  "triangles": 2868,
+  "drawCalls": 5,
+  "materials": 4,
+  "bytes": 332992,
+  "textureCount": 0,
+  "front": "+Z",
+  "independentReimport": true,
+  "bounds": [
+    [
+      -0.8709999918937683,
+      0.05849999934434891,
+      -1.0800000429153442
+    ],
+    [
+      0.8709999918937683,
+      0.9100000262260437,
+      1.2999999523162842
+    ]
+  ],
+  "customizationAndFinVisibility": true,
+  "entireRulesModuleUnchanged": true,
+  "cometAndTitanGlbsUnchanged": true,
+  "preservedFiles": 397
+}

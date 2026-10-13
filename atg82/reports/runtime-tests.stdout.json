@@ -1,0 +1,62 @@
+[
+  {
+    "view": "desktop",
+    "ok": true,
+    "scores": [
+      97035
+    ],
+    "hud": "WASD / arrows move \u2022 Space jumps \u2022 R retries \u2022 I invites\nTouch stick moves; tap JUMP or RETRY. Clear pads in order. Falls add 3s; purple gates are checkpoints. Higher points win. Esc leaves.",
+    "camera": [
+      0,
+      24,
+      10
+    ],
+    "checks": [
+      "startup",
+      "scene creation",
+      "HUD rendering",
+      "touch jump",
+      "touch retry",
+      "full play-through through game loop",
+      "one finish score",
+      "keyboard replay",
+      "reconnect"
+    ]
+  },
+  {
+    "view": "phone",
+    "ok": true,
+    "scores": [],
+    "hud": "WASD / arrows move \u2022 Space jumps \u2022 R retries \u2022 I invites\nTouch stick moves; tap JUMP or RETRY. Clear pads in order. Falls add 3s; purple gates are checkpoints. Higher points win. Esc leaves.",
+    "camera": [
+      0,
+      51.93846153846154,
+      10
+    ],
+    "checks": [
+      "startup",
+      "scene creation",
+      "HUD rendering",
+      "touch jump",
+      "touch retry"
+    ]
+  },
+  {
+    "view": "odd",
+    "ok": true,
+    "scores": [],
+    "hud": "WASD / arrows move \u2022 Space jumps \u2022 R retries \u2022 I invites\nTouch stick moves; tap JUMP or RETRY. Clear pads in order. Falls add 3s; purple gates are checkpoints. Higher points win. Esc leaves.",
+    "camera": [
+      0,
+      24,
+      10
+    ],
+    "checks": [
+      "startup",
+      "scene creation",
+      "HUD rendering",
+      "touch jump",
+      "touch retry"
+    ]
+  }
+]

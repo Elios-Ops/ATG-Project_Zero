@@ -1,0 +1,13 @@
+{
+  "entry": "main.js",
+  "name": "ATG Pod Racer Design Lab",
+  "description": "Choose VECTOR, COMET or KITE, customize free paint, lighting and trim, then race three laps of the Aurora Circuit. Clear all checkpoint gates; barrier hits add one second. WASD/arrows drive, Shift boosts, Space launches, R retries, B returns to the Lab. Touch controls supported. All cosmetics are free.",
+  "maxPlayers": 8,
+  "ui": "minimized",
+  "credits": [
+    {
+      "work": "Original pods, architecture, artwork, course and sound effects",
+      "by": "All Things Gamed"
+    }
+  ]
+}

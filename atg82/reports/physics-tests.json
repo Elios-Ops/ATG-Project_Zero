@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "completed": {
+    "time": 10.675000000000034,
+    "falls": 1,
+    "score": 98632
+  },
+  "checks": [
+    "full physical course completion",
+    "stage order",
+    "finish frozen",
+    "checkpoint penalty",
+    "hazard bounds",
+    "retry"
+  ],
+  "log": [
+    {
+      "event": "checkpoint",
+      "next": 4,
+      "time": 2.9333333333333256
+    },
+    {
+      "event": "checkpoint",
+      "next": 7,
+      "time": 5.866666666666748
+    },
+    {
+      "event": "fall",
+      "next": 7,
+      "time": 6.766666666666793
+    },
+    {
+      "event": "checkpoint",
+      "next": 10,
+      "time": 9.70000000000009
+    },
+    {
+      "event": "finish",
+      "next": 11,
+      "time": 10.675000000000034
+    }
+  ]
+}

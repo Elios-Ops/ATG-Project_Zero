@@ -1,0 +1,13 @@
+{
+  "entry": "main.js",
+  "name": "ZELTAR \u2014 ZelPod Design Lab",
+  "description": "All Things Gamed presents ZELTAR at The ZEL Towers. Choose COMET, VIPER or TITAN, customize free paint, lighting and fins, then race three laps of the Aurora Circuit. Clear 36 ordered checkpoints; barrier hits add one second. WASD/arrows drive, Shift boosts, Space launches, R retries, B returns to the ZelPod Design Lab. Touch supported. Higher points win. All cosmetics are free.",
+  "maxPlayers": 8,
+  "ui": "minimized",
+  "credits": [
+    {
+      "work": "Original ZelPods, ZEL Towers architecture, ZELTAR interface, course and sounds",
+      "by": "All Things Gamed"
+    }
+  ]
+}

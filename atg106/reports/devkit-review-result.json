@@ -1,0 +1,42 @@
+{
+  "started": true,
+  "crash": null,
+  "seconds": 17,
+  "frames": 652,
+  "fps": 43.2,
+  "firstFrame": 1.1,
+  "worstFrame": 82.3,
+  "slowFrames": 1,
+  "errors": [],
+  "logs": [
+    "ATG Design Lab ready: 3 free pods, 5 paints, 3 lights, fins; 3-lap circuit.",
+    "ATG select 1",
+    "ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":0,\"trim\":true}",
+    "ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":1,\"trim\":true}",
+    "ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":1,\"trim\":false}",
+    "ATG race start COMET",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":2,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":3,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":3,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":4,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":5,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":5,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":6,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":6,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":6,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":7,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":8,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":9,\"lap\":1,\"finished\":false}"
+  ],
+  "violations": [],
+  "hud": [
+    "Lab: 1/2/3 pod \u2022 C paint \u2022 L lighting \u2022 F fins \u2022 Space race\nRace: W accelerate / S brake \u2022 A/D steer \u2022 Shift boost \u2022 R retry \u2022 B Lab \u2022 I invite\nTouch: stick drives; tap free Lab options or BOOST / RETRY. Three laps, all gates in order. Barrier hit +1s. Higher points win. Esc leaves."
+  ],
+  "sent": {
+    "messages": 0,
+    "sets": 0,
+    "inputs": 0
+  }
+}

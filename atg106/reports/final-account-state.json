@@ -1,0 +1,428 @@
+{
+  "lots": [
+    {
+      "id": 82,
+      "width": 25,
+      "depth": 25,
+      "height": 57,
+      "shape": "tower",
+      "tier": "large",
+      "price": 64.419,
+      "position": {
+        "x": -248.5,
+        "z": -115.5
+      },
+      "altitude": 0,
+      "zone": "city",
+      "name": null,
+      "version": null,
+      "budgets": {
+        "lod0": {
+          "triangles": 87500,
+          "drawCalls": 14,
+          "materials": 4,
+          "textures": 8,
+          "maxTextureSize": 1024,
+          "texels": 8388608,
+          "skinnedMeshes": 2,
+          "bones": 64,
+          "animations": 8,
+          "fileBytes": 6553600,
+          "uploadBytes": 26214400
+        },
+        "lod1": {
+          "triangles": 12500,
+          "drawCalls": 4,
+          "materials": 2,
+          "textures": 2,
+          "maxTextureSize": 512,
+          "texels": 734003.2,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 1310720,
+          "uploadBytes": 8388608
+        },
+        "lod2": {
+          "triangles": 1330,
+          "drawCalls": 1,
+          "materials": 1,
+          "textures": 1,
+          "maxTextureSize": 256,
+          "texels": 94371.84,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 278921,
+          "uploadBytes": 2097152
+        }
+      },
+      "experience": null,
+      "game": {
+        "price": 0,
+        "prize": 0,
+        "mode": "top",
+        "perPlayer": "once",
+        "winners": null,
+        "places": 3,
+        "lowWins": false,
+        "minSeconds": 10,
+        "paused": false,
+        "scoreUnit": "points",
+        "pool": 0,
+        "funded": true,
+        "city": 0,
+        "plays": 0,
+        "wins": 0,
+        "prizes": 0,
+        "paidOut": 0,
+        "winRate": null,
+        "top": [],
+        "weekEnds": 1791763200000,
+        "recent": [],
+        "ticketUntil": null,
+        "fee": 0.1
+      }
+    },
+    {
+      "id": 106,
+      "width": 25,
+      "depth": 25,
+      "height": 57,
+      "shape": "tower",
+      "tier": "large",
+      "price": 64.419,
+      "position": {
+        "x": -277.5,
+        "z": -115.5
+      },
+      "altitude": 0,
+      "zone": "city",
+      "name": null,
+      "version": null,
+      "budgets": {
+        "lod0": {
+          "triangles": 87500,
+          "drawCalls": 14,
+          "materials": 4,
+          "textures": 8,
+          "maxTextureSize": 1024,
+          "texels": 8388608,
+          "skinnedMeshes": 2,
+          "bones": 64,
+          "animations": 8,
+          "fileBytes": 6553600,
+          "uploadBytes": 26214400
+        },
+        "lod1": {
+          "triangles": 12500,
+          "drawCalls": 4,
+          "materials": 2,
+          "textures": 2,
+          "maxTextureSize": 512,
+          "texels": 734003.2,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 1310720,
+          "uploadBytes": 8388608
+        },
+        "lod2": {
+          "triangles": 1330,
+          "drawCalls": 1,
+          "materials": 1,
+          "textures": 1,
+          "maxTextureSize": 256,
+          "texels": 94371.84,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 278921,
+          "uploadBytes": 2097152
+        }
+      },
+      "experience": null,
+      "game": null
+    },
+    {
+      "id": 154,
+      "width": 25,
+      "depth": 25,
+      "height": 57,
+      "shape": "tower",
+      "tier": "large",
+      "price": 64.419,
+      "position": {
+        "x": -277.5,
+        "z": -188.5
+      },
+      "altitude": 0,
+      "zone": "city",
+      "name": null,
+      "version": null,
+      "budgets": {
+        "lod0": {
+          "triangles": 87500,
+          "drawCalls": 14,
+          "materials": 4,
+          "textures": 8,
+          "maxTextureSize": 1024,
+          "texels": 8388608,
+          "skinnedMeshes": 2,
+          "bones": 64,
+          "animations": 8,
+          "fileBytes": 6553600,
+          "uploadBytes": 26214400
+        },
+        "lod1": {
+          "triangles": 12500,
+          "drawCalls": 4,
+          "materials": 2,
+          "textures": 2,
+          "maxTextureSize": 512,
+          "texels": 734003.2,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 1310720,
+          "uploadBytes": 8388608
+        },
+        "lod2": {
+          "triangles": 1330,
+          "drawCalls": 1,
+          "materials": 1,
+          "textures": 1,
+          "maxTextureSize": 256,
+          "texels": 94371.84,
+          "skinnedMeshes": 0,
+          "bones": 0,
+          "animations": 0,
+          "fileBytes": 278921,
+          "uploadBytes": 2097152
+        }
+      },
+      "experience": null,
+      "game": null
+    }
+  ],
+  "avatar": {
+    "budget": {
+      "triangles": 20000,
+      "drawCalls": 6,
+      "materials": 6,
+      "textures": 6,
+      "maxTextureSize": 1024,
+      "texels": 4194304,
+      "skinnedMeshes": 3,
+      "bones": 75,
+      "animations": 24,
+      "fileBytes": 3145728,
+      "uploadBytes": 12582912,
+      "height": 3,
+      "width": 2.5
+    },
+    "slots": {
+      "required": [
+        "idle",
+        "fly"
+      ],
+      "optional": [
+        "fly_fast",
+        "ascend",
+        "descend",
+        "interact",
+        "wave"
+      ]
+    },
+    "package": {
+      "maxFiles": 24,
+      "maxUploadBytes": 16777216,
+      "maxServedBytes": 4194304,
+      "shaderFiles": 16,
+      "shaderBytes": 32000,
+      "textures": 8,
+      "textureSize": 1024,
+      "materials": 8,
+      "uniformsPerMaterial": 8,
+      "texturesPerMaterial": 2,
+      "emotes": 4,
+      "idle": 4,
+      "particles": 4,
+      "particleCap": 192,
+      "particleRate": 60,
+      "particleBurst": 64,
+      "particleSize": 1.5,
+      "particleLife": 4,
+      "hidden": 8,
+      "loopIterations": 1024,
+      "loopProduct": 16384,
+      "loopDepth": 4,
+      "costRatio": 4,
+      "costSlackMs": 6
+    },
+    "suggestedEmotes": [
+      "Joy",
+      "Approval",
+      "Sadness",
+      "Indignation"
+    ]
+  },
+  "lod": {
+    "nearCount": 5,
+    "nearDistance": 40,
+    "nearPerSize": 0.75,
+    "midDistance": 240,
+    "midCount": 40,
+    "farDistance": 700,
+    "farCount": 120
+  },
+  "experience": {
+    "limits": {
+      "maxPlayersCap": 32,
+      "defaultMaxPlayers": 8,
+      "enterDistance": 60,
+      "maxFiles": 1000,
+      "maxFileBytes": 52428800,
+      "maxTotalBytes": 209715200,
+      "partBytes": 94371840,
+      "maxSourceBytes": 4194304,
+      "maxBundleBytes": 12582912,
+      "maxLineLength": 1000,
+      "maxStringLiteral": 20480,
+      "assetTriangles": 1000000,
+      "assetTextureSize": 4096,
+      "extensions": [
+        ".js",
+        ".mjs",
+        ".json",
+        ".glb",
+        ".vrm",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".webp",
+        ".ogg",
+        ".mp3",
+        ".wav",
+        ".txt"
+      ],
+      "messageBytes": 1024,
+      "messagesPerSecond": 30,
+      "stateBytes": 65536,
+      "stateKeys": 256,
+      "keyLength": 64,
+      "valueBytes": 2048,
+      "inputBytes": 256,
+      "inputsPerSecond": 60,
+      "tickHz": 20,
+      "watchdogMs": 3000,
+      "startStallMs": 30000,
+      "startCapMs": 600000,
+      "cameraReach": 10,
+      "hudChars": 400
+    },
+    "threeUrl": "https://project0.city/sandbox/three-r186/three.module.js",
+    "open": true
+  },
+  "play": {
+    "limits": {
+      "maxPrice": 1000,
+      "ticketMinutes": 30,
+      "maxPrize": 10000,
+      "maxPool": 1000000,
+      "minSeconds": 10,
+      "maxPlaces": 10,
+      "kinds": [
+        "badge",
+        "card",
+        "key",
+        "achievement"
+      ],
+      "itemsPerCreator": 50,
+      "imageBytes": 524288,
+      "imageMin": 64,
+      "imageMax": 1024,
+      "maxSupply": 1000000,
+      "codesPerMinute": 5,
+      "codesPerDay": 50
+    },
+    "items": []
+  },
+  "review": {
+    "automatic": true,
+    "pending": [
+      {
+        "id": 3220,
+        "kind": "experience",
+        "lot_id": 82,
+        "status": "queued"
+      }
+    ]
+  },
+  "entities": [],
+  "entityGames": [
+    {
+      "game": "zer0-g",
+      "lot": 383,
+      "kind": "machine",
+      "title": "ZER0-G machine",
+      "skill": "https://project0.city/api/games/zer0-g/skill.md"
+    },
+    {
+      "game": "zer0-arena",
+      "lot": 519,
+      "kind": "creature",
+      "title": "ZER0 ARENA creature",
+      "skill": "https://project0.city/api/games/zer0-arena/skill.md"
+    },
+    {
+      "game": "zer0-sk8",
+      "lot": 451,
+      "kind": "skater",
+      "title": "ZER0 SK8 skater",
+      "skill": "https://project0.city/api/games/zer0-sk8/skill.md"
+    },
+    {
+      "game": "descenso",
+      "lot": 562,
+      "kind": "dreamer",
+      "title": "DESCENSO dreamer: hero, weapon and nightmare",
+      "skill": "https://project0.city/api/games/descenso/skill.md"
+    },
+    {
+      "game": "polar-bots",
+      "lot": 483,
+      "kind": "robot",
+      "title": "POLAR BOTS robot",
+      "skill": "https://project0.city/api/games/polar-bots/skill.md"
+    },
+    {
+      "game": "smash-0",
+      "lot": 335,
+      "kind": "fighter",
+      "title": "Smash 0 Fighter & Stage",
+      "skill": "https://project0.city/api/games/smash-0/skill.md"
+    },
+    {
+      "game": "polar-command",
+      "lot": 143,
+      "kind": "commander",
+      "title": "POLAR COMMAND doctrine",
+      "skill": "https://project0.city/api/games/polar-command/skill.md"
+    },
+    {
+      "game": "pocket-wilds",
+      "lot": 1925,
+      "kind": "creature",
+      "title": "Pocket Wilds",
+      "skill": "https://project0.city/api/games/pocket-wilds/skill.md"
+    },
+    {
+      "game": "claw-pets",
+      "lot": 1764,
+      "kind": "pet",
+      "title": "Claw Pets pet",
+      "skill": "https://project0.city/api/games/claw-pets/skill.md"
+    }
+  ]
+}

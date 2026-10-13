@@ -1,0 +1,73 @@
+{
+  "old106": {
+    "bottom": 43.09400177001953,
+    "top": 55.50600051879883
+  },
+  "proposed106": {
+    "lod0": {
+      "bottom": 35,
+      "top": 57,
+      "height": 22,
+      "displayThickness": 0.03,
+      "glazingSeparationLOD0": 0.085,
+      "propertyBoundsPassed": true,
+      "drawCalls": 4
+    },
+    "lod1": {
+      "bottom": 35,
+      "top": 57,
+      "height": 22,
+      "displayThickness": 0.03,
+      "glazingSeparationLOD0": 0.085,
+      "propertyBoundsPassed": true,
+      "drawCalls": 2
+    }
+  },
+  "lot82Unmodified": {
+    "bottom": 43.09400177001953,
+    "top": 55.50600051879883,
+    "needsOwnAuthorizedExpansion": true
+  },
+  "fullHeightAnimation": {
+    "ok": true,
+    "sampleTimes": [
+      0,
+      0.5,
+      1.3,
+      2.7,
+      4.8
+    ],
+    "bands": "Every 1m band from Y35 to Y57",
+    "illuminatedFractionPerBand": [
+      0.2589518229166667,
+      0.17154947916666666,
+      0.21516927083333334,
+      0.1669921875,
+      0.16910807291666666,
+      0.175537109375,
+      0.19303385416666666,
+      0.21402994791666666,
+      0.18107096354166666,
+      0.20377604166666666,
+      0.21012369791666666,
+      0.22607421875,
+      0.237060546875,
+      0.2535807291666667,
+      0.18098958333333334,
+      0.15926106770833334,
+      0.20231119791666666,
+      0.2627766927083333,
+      0.23844401041666666,
+      0.1689453125,
+      0.19677734375,
+      0.19889322916666666
+    ],
+    "verticalMask": "none",
+    "sharedClock": "p0Time unchanged; no client offset",
+    "flow106": "+X toward Lot82 gap",
+    "lensCentreWorldY": 46,
+    "logoWorldBaseY": 52
+  },
+  "litPaneAreaRatio": 1.7724784255367145,
+  "streetGpuCostMeasured": false
+}

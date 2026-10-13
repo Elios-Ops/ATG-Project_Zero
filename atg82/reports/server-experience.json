@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "findings": [],
+  "manifest": {
+    "entry": "main.js",
+    "name": "ATG Gladiator Training Academy",
+    "description": "Clear all ten jump stages, dodge moving sweepers and reach the finish. Checkpoints save progress; falls add three seconds. Beat your time and chase the weekly points table. WASD/arrows move, Space jumps, R retries. Touch stick moves; tap JUMP or RETRY.",
+    "maxPlayers": 8,
+    "credits": [
+      {
+        "work": "Original architecture, game, sounds and artwork",
+        "by": "All Things Gamed"
+      }
+    ],
+    "ui": "minimized"
+  },
+  "stats": {
+    "files": 7,
+    "bytes": 49554,
+    "sourceBytes": 14056,
+    "bundleBytes": 15501
+  },
+  "hash": "8619fc7c57b6039b"
+}

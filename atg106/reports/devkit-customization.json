@@ -1,0 +1,10 @@
+[
+  "devkit: 2 modules, 18 KB from http://localhost:5500/experience/",
+  "log: ATG Design Lab ready: 3 free pods, 5 paints, 3 lights, fins; 3-lap circuit.",
+  "devkit: Started in 7.9 s",
+  "room: Ada joined",
+  "log: ATG select 1",
+  "log: ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":0,\"trim\":true}",
+  "log: ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":1,\"trim\":true}",
+  "log: ATG lab config {\"mode\":\"lab\",\"pod\":1,\"paint\":1,\"lamp\":1,\"trim\":false}"
+]

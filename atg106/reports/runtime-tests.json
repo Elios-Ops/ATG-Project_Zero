@@ -1,0 +1,55 @@
+[
+  {
+    "view": "desktop",
+    "ok": true,
+    "scores": [
+      97665
+    ],
+    "sceneMeshes": 4,
+    "checks": [
+      "startup",
+      "pod selection",
+      "paint",
+      "lighting",
+      "fins",
+      "launch",
+      "HUD",
+      "full keyboard race",
+      "finish scoring once",
+      "retry",
+      "return to lab",
+      "reconnect"
+    ]
+  },
+  {
+    "view": "phone",
+    "ok": true,
+    "scores": [],
+    "sceneMeshes": 4,
+    "checks": [
+      "startup",
+      "pod selection",
+      "paint",
+      "lighting",
+      "fins",
+      "launch",
+      "HUD",
+      "touch paint"
+    ]
+  },
+  {
+    "view": "odd",
+    "ok": true,
+    "scores": [],
+    "sceneMeshes": 4,
+    "checks": [
+      "startup",
+      "pod selection",
+      "paint",
+      "lighting",
+      "fins",
+      "launch",
+      "HUD"
+    ]
+  }
+]

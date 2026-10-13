@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "pod": "COMET",
+      "seconds": 23.899999999999284,
+      "penalty": 0,
+      "points": 97610,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 5.555243000000004
+    },
+    {
+      "pod": "VIPER",
+      "seconds": 26.808333333332452,
+      "penalty": 0,
+      "points": 97319,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 2.059423999999993
+    },
+    {
+      "pod": "TITAN",
+      "seconds": 25.241666666665875,
+      "penalty": 0,
+      "points": 97476,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 1.9162280000000038
+    }
+  ],
+  "checks": [
+    "all three pods complete 36 ordered gates",
+    "braking",
+    "barriers and penalty scoring",
+    "no shortcut finish",
+    "energy recovery",
+    "finish immutable",
+    "retry reset",
+    "no purchase or prize calls"
+  ]
+}

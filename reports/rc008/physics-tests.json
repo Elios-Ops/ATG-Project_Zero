@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "pod": "COMET",
+      "seconds": 23.899999999999284,
+      "penalty": 0,
+      "points": 97610,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 11.945235999999994
+    },
+    {
+      "pod": "VIPER",
+      "seconds": 26.808333333332452,
+      "penalty": 0,
+      "points": 97319,
+      "gates": 36,
+      "hits": 0,
+      "simulationMs": 2.6085319999999967
+    }
+  ],
+  "checks": [
+    "both public pods complete 36 ordered gates",
+    "braking",
+    "barriers and penalty scoring",
+    "no shortcut finish",
+    "energy recovery",
+    "finish immutable",
+    "retry reset",
+    "no purchase or prize calls"
+  ]
+}

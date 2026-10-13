@@ -1,0 +1,26 @@
+[
+  {
+    "file": "architecture010/source-originals/01-Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb.zip",
+    "unchanged": true,
+    "sha256": "4158e2ee3a155df86899f248fa9d5d97e00819d980013396d44bf3dabf6b798e"
+  },
+  {
+    "file": "architecture010/source-originals/Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb",
+    "unchanged": true,
+    "sha256": "fbb3fe64eb8d0e31d50d5ab8fe40c14faca461b750163f3cdfd4787f7cb96c6a"
+  },
+  {
+    "file": "architecture010/source-originals/02-Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb.zip",
+    "unchanged": true,
+    "sha256": "0485c64eb249e7de15562ce7eb6a6784908085a7ecba3a5584e4bd65f8c6b54e"
+  },
+  {
+    "file": "architecture010/source-originals/Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb",
+    "unchanged": true,
+    "sha256": "1847461dd80c9e93fc1cca1b119616671e0cac63f63b3f77f0572564931443cd"
+  },
+  {
+    "gameplayCheckedFiles": 63,
+    "gameplayUnchanged": true
+  }
+]

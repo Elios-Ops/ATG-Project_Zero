@@ -1,0 +1,23 @@
+{
+  "experience/zelpods.js": "1763b057f4372ae4500af0042f5c21082017b38694706e4562ccba9dda0b8cf2",
+  "experience/experience.json": "6e6faa1e844770c8267b46526e13ba87823d1f93c0e557e2255153c14018a1d6",
+  "experience/rules.js": "97a297843335e5b554233a3844df73f89a2f8a069300084100e50c4c5d9b1699",
+  "experience/main.js": "98504a73da0d2c04d81c74a22ec92683327bc842c0d88348a90712738ab2a8db",
+  "experience/viper-candidate.js": "7c2128ef6b63e41ea559ada57d4681ffe37f65f181315cab05e9267b86ce3c57",
+  "experience/assets/finish.wav": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+  "experience/assets/hit.wav": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+  "experience/assets/VIPER-preview.glb": "29bdc705b22367c66e1266f05df2a75395c82eae4b96e456adda124b654f7716",
+  "experience/assets/COMET-preview.glb": "2f2b17c0aad7b0147ed87941791682b0d6118b66ba32eac075c9f7cede81f4f2",
+  "experience/assets/lap.wav": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+  "experience/assets/launch.wav": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+  "experience/assets/gate.wav": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+  "exterior/manifest.json": "a2d6f9c9a66cf228e974972a66d6f8693ef23f0cf9c73dfcf7d023a56f778bd7",
+  "exterior/lod2.glb": "e600680041b2e1bd31f38d3372a9425d30e57ce7e779e4978a244b03b8fafb10",
+  "exterior/lot.json": "55ddc4d74d8f073f0f59e1cc6b3e489999879655f4812d7dc013fb32fc272766",
+  "exterior/event-horizon.glsl": "dc82142e3187cc097e59bc808f4c183fe371de4fd5633b784df5782a9f0a6f6f",
+  "exterior/lod0.glb": "5ecc212548be840f217f5f139709b83a47b63f6d6a0889160180ce877605a47b",
+  "exterior/racing-neon.glsl": "f40200fb37800564533fdd8ee8e066343a618d27ccd518d32d8dd9b6fdda571f",
+  "exterior/lod1.glb": "f9392af8f033b6a401a9e7759d814d688cd108bf91de270277f3cdcb69ef982e",
+  "experience.zip": "cbc61d455968b5640fcc2182463ab08cf80a8a6dcfc7c15db2a0923149cd00e0",
+  "proposed-game-settings.json": "a7edb15c19f0d24ee84277af4e4d7333454e5811571e0fdfd2710f511ce33614"
+}

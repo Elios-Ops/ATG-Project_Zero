@@ -1,0 +1,198 @@
+{
+  "RAMPAGE": {
+    "0": {
+      "triangles": 86000,
+      "fileBytes": 4566144,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          1024,
+          1024
+        ],
+        [
+          1024,
+          1024
+        ],
+        [
+          1024,
+          1024
+        ]
+      ],
+      "texelsIncludingMips": 4194304.0,
+      "bounds": {
+        "min": [
+          -12.162140846252441,
+          0,
+          -7.958055019378662
+        ],
+        "max": [
+          12.189678192138672,
+          36.38935852050781,
+          7.965256214141846
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    },
+    "1": {
+      "triangles": 11999,
+      "fileBytes": 827412,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "texelsIncludingMips": 699050.6666666666,
+      "bounds": {
+        "min": [
+          -12.129780769348145,
+          0,
+          -7.881809234619141
+        ],
+        "max": [
+          12.16153335571289,
+          33.31427001953125,
+          7.882318496704102
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    },
+    "2": {
+      "triangles": 1250,
+      "fileBytes": 125772,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          256,
+          256
+        ]
+      ],
+      "texelsIncludingMips": 87381.33333333333,
+      "bounds": {
+        "min": [
+          -11.994136810302734,
+          0,
+          -7.722221374511719
+        ],
+        "max": [
+          11.459917068481445,
+          31.927871704101562,
+          7.903264999389648
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    }
+  },
+  "ZELTAR": {
+    "0": {
+      "triangles": 86000,
+      "fileBytes": 4174648,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          1024,
+          1024
+        ],
+        [
+          1024,
+          1024
+        ],
+        [
+          1024,
+          1024
+        ]
+      ],
+      "texelsIncludingMips": 4194304.0,
+      "bounds": {
+        "min": [
+          -11.825182914733887,
+          0,
+          -12.169903755187988
+        ],
+        "max": [
+          11.800129890441895,
+          30.173479080200195,
+          12.186697006225586
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    },
+    "1": {
+      "triangles": 12000,
+      "fileBytes": 744744,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "texelsIncludingMips": 699050.6666666666,
+      "bounds": {
+        "min": [
+          -11.847822189331055,
+          0,
+          -12.149361610412598
+        ],
+        "max": [
+          11.820307731628418,
+          30.121097564697266,
+          12.196717262268066
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    },
+    "2": {
+      "triangles": 1250,
+      "fileBytes": 122616,
+      "materials": 1,
+      "drawCalls": 1,
+      "textureDimensions": [
+        [
+          256,
+          256
+        ]
+      ],
+      "texelsIncludingMips": 87381.33333333333,
+      "bounds": {
+        "min": [
+          -11.756857872009277,
+          0,
+          -11.969915390014648
+        ],
+        "max": [
+          11.819731712341309,
+          27.54173469543457,
+          11.979615211486816
+        ]
+      },
+      "extensions": [],
+      "errors": [],
+      "ok": true
+    }
+  }
+}

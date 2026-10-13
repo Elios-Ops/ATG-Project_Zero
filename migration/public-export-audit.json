@@ -1,0 +1,11 @@
+{
+  "publicFilesScanned": 262,
+  "findings": [],
+  "unchangedCodeShaderFilesVerified": 82,
+  "changedCodeShaderFiles": [],
+  "publicBinaryAssets": [],
+  "apiCredentialsIncluded": false,
+  "privateHistoryWillBePushed": false,
+  "publicVisibilityAuthorizedBy": "ATG Directive013",
+  "limitations": "Pattern scan plus manual exclusion review; not a universal proof against unknown secret formats."
+}

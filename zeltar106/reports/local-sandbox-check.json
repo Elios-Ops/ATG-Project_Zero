@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "sourceModules": [
+    "zeltar106/experience/main.js",
+    "zeltar106/experience/rules.js",
+    "zeltar106/experience/zelpods.js"
+  ],
+  "maximumSourceLine1000": true,
+  "forbiddenOperationsAbsent": true,
+  "exportedGlbsMatchPackagedAssets": true,
+  "testModelsMatchRuntimeSource": true,
+  "originalWorkingFilesUnchanged": 109
+}

@@ -1,0 +1,2522 @@
+[
+  {
+    "filename": "RAMPAGE-hero.png",
+    "assetType": "png",
+    "restorePath": "architecture010/references/RAMPAGE-hero.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3528978,
+    "sha256": "7ce1c863973086ee4c5ac8476419188b9f0d5ed53de71945f86b22700b84ba78",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "RAMPAGE-mood-board.png",
+    "assetType": "png",
+    "restorePath": "architecture010/references/RAMPAGE-mood-board.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3596159,
+    "sha256": "cd790c1a0f13409d0e6497f665057e96502484af8333439613e86b32bea9f770",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR-hero.png",
+    "assetType": "png",
+    "restorePath": "architecture010/references/ZELTAR-hero.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3341657,
+    "sha256": "ab9b8c5d7f6077bbff37e90cb467c4ea6699e081923869142a595f96141ab922",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR-mood-board.png",
+    "assetType": "png",
+    "restorePath": "architecture010/references/ZELTAR-mood-board.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3354101,
+    "sha256": "0d7e6f209dc405ded06a70fcaca2836c76cd96675d3f3f65844f2c0d646f01ba",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "01-Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb.zip",
+    "assetType": "zip",
+    "restorePath": "architecture010/source-originals/01-Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 95809719,
+    "sha256": "4158e2ee3a155df86899f248fa9d5d97e00819d980013396d44bf3dabf6b798e",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "02-Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb.zip",
+    "assetType": "zip",
+    "restorePath": "architecture010/source-originals/02-Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 73869615,
+    "sha256": "0485c64eb249e7de15562ce7eb6a6784908085a7ecba3a5584e4bd65f8c6b54e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb",
+    "assetType": "glb",
+    "restorePath": "architecture010/source-originals/Meshy_AI_rampage_tower_1012201148_image-to-3d-texture.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 126616112,
+    "sha256": "fbb3fe64eb8d0e31d50d5ab8fe40c14faca461b750163f3cdfd4787f7cb96c6a",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb",
+    "assetType": "glb",
+    "restorePath": "architecture010/source-originals/Meshy_AI_zeltar_tower_exterior_1012194446_image-to-3d-texture.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 94095800,
+    "sha256": "1847461dd80c9e93fc1cca1b119616671e0cac63f63b3f77f0572564931443cd",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ATG_Directive007_Visual_Review_Package.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ATG_Directive007_Visual_Review_Package.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 6930986,
+    "sha256": "b0af9ccd33e4d73271b3cd2c598115c991dfb915e4ee9269916a56b00a3feb9e",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ATG_Lot106_Pod_Racer_Gauntlet_Review_Package.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ATG_Lot106_Pod_Racer_Gauntlet_Review_Package.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 2908670,
+    "sha256": "9a5b62eb1433c6b8e1cfa146cfe4ab391c63271ce134a9f51feff4f0eb8612a8",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ATG_Lot82_Directive002_Publication_Receipt.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ATG_Lot82_Directive002_Publication_Receipt.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7760,
+    "sha256": "3a93e7b0fa33283aa1c538e0a33fbffe2d947321571e86bacebad8a2c4512171",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ATG_Lot82_Training_Academy_Review_Package.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ATG_Lot82_Training_Academy_Review_Package.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 1645170,
+    "sha256": "3c85e92761c1fbe15cdf2121bbda8cf444b113e092940ab9f3ef6b4a59ef0f87",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR_Lot106_Directive006_Review_Package.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ZELTAR_Lot106_Directive006_Review_Package.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 4381931,
+    "sha256": "8167a08a6ab81c7be2bc1b3cdd3f27eb75dab8cabc1e99289d49c9142d3297bb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR_Three_ZelPods_Models.zip",
+    "assetType": "zip",
+    "restorePath": "archives/ZELTAR_Three_ZelPods_Models.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 137857,
+    "sha256": "8ff182fac8811bb003a5c87669fd0fbd4899cd25f462bfcbca3562cac450ee40",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Meshy_AI_Comet_Pod_Racer_3D_1012034022_texture.glb",
+    "assetType": "glb",
+    "restorePath": "assets/originals/meshy-comet/Meshy_AI_Comet_Pod_Racer_3D_1012034022_texture.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 10134048,
+    "sha256": "c03e9d4bc55d416b8566cf65c55de6a2328f585778b1aa719958d6b7aa37d934",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "candidate-validation.zip",
+    "assetType": "zip",
+    "restorePath": "atg007/candidate-validation.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 99220,
+    "sha256": "5540ab0c219c42d2cfeb5ed55147d16c11ddbc7d713d00d206e97cdb4b26318c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER-007-candidate.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/experience/assets/VIPER-007-candidate.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 332992,
+    "sha256": "29bdc705b22367c66e1266f05df2a75395c82eae4b96e456adda124b654f7716",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "atg007/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 12392,
+    "sha256": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "gate.wav",
+    "assetType": "wav",
+    "restorePath": "atg007/experience/assets/gate.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3130,
+    "sha256": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "hit.wav",
+    "assetType": "wav",
+    "restorePath": "atg007/experience/assets/hit.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 5336,
+    "sha256": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lap.wav",
+    "assetType": "wav",
+    "restorePath": "atg007/experience/assets/lap.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7100,
+    "sha256": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "launch.wav",
+    "assetType": "wav",
+    "restorePath": "atg007/experience/assets/launch.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 13274,
+    "sha256": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 185328,
+    "sha256": "5ecc212548be840f217f5f139709b83a47b63f6d6a0889160180ce877605a47b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 77792,
+    "sha256": "f9392af8f033b6a401a9e7759d814d688cd108bf91de270277f3cdcb69ef982e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58796,
+    "sha256": "e600680041b2e1bd31f38d3372a9425d30e57ce7e779e4978a244b03b8fafb10",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "COMET.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/models/COMET.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 118948,
+    "sha256": "2f2b17c0aad7b0147ed87941791682b0d6118b66ba32eac075c9f7cede81f4f2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "TITAN.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/models/TITAN.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 143516,
+    "sha256": "a534c811965b1b1fd199bc51bc1281930396b8c3fd7dcee872a324e991cabc94",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/models/VIPER.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 332992,
+    "sha256": "29bdc705b22367c66e1266f05df2a75395c82eae4b96e456adda124b654f7716",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER-approved-moodboard.png",
+    "assetType": "png",
+    "restorePath": "atg007/references/VIPER-approved-moodboard.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3057768,
+    "sha256": "d9d5dad536dadbfc21cf4e2de22ccf3ff820aaaae5a25cc0f3a4f7fdb01bacd5",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/references/lot82/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 154364,
+    "sha256": "7ef100a983d447e81433a3893fdef9d6827e4102d0331a4d0dc7c40d604c8ba4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/references/lot82/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 74748,
+    "sha256": "7c0788bae852d25c82475c27b9401e99b486c90b3dea34aec39f688e2fb8944a",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "atg007/references/lot82/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 51796,
+    "sha256": "8158106afaae601e2d6d2717486b21cd8f529d7aee40f2c0bf4cd16ecc930fea",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Event_Horizon_007_Height_Comparison.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/Event_Horizon_007_Height_Comparison.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 141952,
+    "sha256": "7e526dcf8e0a42897521661587e59b5d3904b794d2d3b6624e1b9426fe945c24",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Event_Horizon_007_LOD0.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/Event_Horizon_007_LOD0.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 70157,
+    "sha256": "824d4c610aa051327a041ce8b26fffe741942736cf2dce03de23964aa4b355e1",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Event_Horizon_007_LOD1.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/Event_Horizon_007_LOD1.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 84820,
+    "sha256": "e0f4693cf87fd395b63f971af7717fb56e5f3ae14443361f1f523eca57446d5d",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "Event_Horizon_007_LOD2.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/Event_Horizon_007_LOD2.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 15464,
+    "sha256": "a06ccb5accb6549ce6d31f9914c558e521f03b4dd9c497aac6cc035c65ddac52",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER_007_Current_vs_Proposed.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/VIPER_007_Current_vs_Proposed.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 175472,
+    "sha256": "77f5b3d86f5fdbd7b91fc17ff636e1660fe2e7bb96dbc24e15ffb9baefcfdfa1",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER_007_Multiview.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/VIPER_007_Multiview.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 357734,
+    "sha256": "6972eed962230c3e038ad8374b6f058e63460ce34232585e4847768fa3464f06",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR_ZelPod_Fleet_Preview.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZELTAR_ZelPod_Fleet_Preview.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 150526,
+    "sha256": "8a6e5b2b74e06e1b8f315adbcc0837ca411f823551e009593ddbc4ce66aa706a",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-above.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-COMET-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 33045,
+    "sha256": "f59b796002cebeb998c7ab35aa039749cd43a3607f4962469e2b0cdd78d11a60",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-front.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-COMET-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 31802,
+    "sha256": "bdaeb6e9353f7e6445044106ebc3c1a966725bc82e5b6bb13b93fc44f5760d31",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-rear.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-COMET-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 29624,
+    "sha256": "d215d8b203460b2c1efcd3d655c153a3b2e76711df9a37e37b6cabbc45af37cb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-side.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-COMET-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 20873,
+    "sha256": "51d6e0f28f79e3ac611330a9e2b25423c9e89a62efa14c99c1f4f4d05d59e4c9",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-COMET-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 34214,
+    "sha256": "88bd934de869aad29432854f1b9b19d17ec894af01e11cea2747a01f468bb9ed",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-above.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-TITAN-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 34449,
+    "sha256": "9e7ff1359106a8f27a6094fbb82cc2e36919f8e5b0473129735ea1438dc68d8b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-front.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-TITAN-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 33912,
+    "sha256": "649573f21aff3675bfc8353f57a0ff4e63133bc8be32b2b06071f0bfde3ba682",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-rear.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-TITAN-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 31125,
+    "sha256": "51acfa3cb87b81cb8d2924992c08dada4dcc5e1684de1df7ffa43a2391234dae",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-side.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-TITAN-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 19566,
+    "sha256": "41a5d907ce05a652a590386fea518fc0c124b555d5915a26df6966949d1d85a2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-TITAN-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 36047,
+    "sha256": "59f6eb34c8dbe17daf07edc549a5c5da4c6b2dc093cc3c009d938b169a8a0888",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-above.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-VIPER-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 44873,
+    "sha256": "19b789493db66fe8fb9ad772d05748727c24843f90611550ac1e03e6284ed646",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-front.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-VIPER-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 42397,
+    "sha256": "a9a8afa07b38b76dfb11255ce0b2e9b20b997cd1d35efcaa4d3193938a9a6e92",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-rear.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-VIPER-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 34557,
+    "sha256": "34e6ba9ed8a4b40ca7f447065950bb32d01ad52650c0909628fe827043f89a3d",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-side.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-VIPER-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 25877,
+    "sha256": "71955d4e37edfb97a787f8009177c3b00a65e41cf39289bfe6bf6d817ff3b085",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/ZelPod-VIPER-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 42031,
+    "sha256": "6f7e27539d105920d3056e6ad3e80aa520ba3fe48f8911560dfa2320480b14ea",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-custom.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/desktop-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/desktop-finish.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 124927,
+    "sha256": "b76112c366ce2a8ab154992c58736af5cf755b40dceb9f971be5f46ce3a52ba2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-lab.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/desktop-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 108673,
+    "sha256": "bddaf6200b6905a32d241fc91116e511bebfe8358b09d523a201cc2edf1ca3fc",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-race.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/desktop-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 105308,
+    "sha256": "ebf9939e3dffd7efb00a0b77d69977fa8a1b2364093ded7ae1748fd07404f5ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-viper-reference.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/desktop-viper-reference.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 110046,
+    "sha256": "11cd68118f91e280900378ca83fe5b974ca2370895e3b80703029ff0ccb30d97",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-custom.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/odd-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 92619,
+    "sha256": "92d4acb1f98015381a95101ad2d5ff60a2375d035258d6341f98d5633649b21c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-lab.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/odd-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 90824,
+    "sha256": "bca0933b2802dacefa4a0bf2748db0206d62e23ad323c018bb493720d16b1fdb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-race.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/odd-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 89010,
+    "sha256": "dc931c380b8a57387f27a133a34a521a0087be3a731d5aa5af571d912f9f72f7",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-viper-reference.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/odd-viper-reference.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 93402,
+    "sha256": "9ea8397cef5ec1602ad7d951c0e8d2c6b360e29a4f7d3f8ca19f3444a7f77f3f",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-custom.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/phone-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 69250,
+    "sha256": "6801474e763ce906b83c2b9be43613e24957c1fb9674dce8c69374a0d89c7275",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-lab.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/phone-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66386,
+    "sha256": "e4764fa4a6439f6c630b0031d35a56b0da7c9fc117f70c2b16f8d9a7c478415b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-race.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/phone-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 75358,
+    "sha256": "e1b6661e91080a9d2dba03eeff854a0d320174dd773f1cf17928f01414abff19",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-viper-reference.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/phone-viper-reference.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 69713,
+    "sha256": "d6eea963640be9d6d86247a1e334b42394a161c9010fae17ef3e5a5b8d082989",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-COMET.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/silhouette-COMET.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 427,
+    "sha256": "9630cb9e38fe7db175b55e781fa8f899d8471978a268455109fd1474a991b854",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-TITAN.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/silhouette-TITAN.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 403,
+    "sha256": "3c04e2a64b4365c8d8914fe79625b34059a08ff327db9fbcc4dc0ab19b04b4ff",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-VIPER.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/silhouette-VIPER.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 412,
+    "sha256": "d0b0c7c4c15dc49d1f1445c52a2de5f1dd500283b11447e28e36d1ba522b20ee",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-above.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/tower-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 121274,
+    "sha256": "a9eccee0c332da713fd01e7fb60aefea2e76500e30e18542370447c5a3c92188",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-back.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/tower-back.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 74941,
+    "sha256": "15791bf452344805a8bff2e4e717dbc1f1aec26854154ec1e573dbf769a6c3e3",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-front.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/tower-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 44087,
+    "sha256": "b35b148fd2996fefbc7982a5502e6a1179c4a6c688a513ce53e8e6830a46ec62",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/tower-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 70099,
+    "sha256": "fb53482e479d13b9b93cd94f45195dd4a9ce702d80ac95131dd4372f60c39220",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-COMET.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/wireframe-COMET.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 89270,
+    "sha256": "0897363881ecebef1485d50044f365c2cbc1e760b1c8766891fd2401a1005e59",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-TITAN.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/wireframe-TITAN.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 119957,
+    "sha256": "2c9eccec2d909d5327ad891e61ebaaf4193c68521cf581afb0db09e05f4b3ddc",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-VIPER.png",
+    "assetType": "png",
+    "restorePath": "atg007/reports/wireframe-VIPER.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 162469,
+    "sha256": "c98ffa56a174a8189ce73eb81ec89cfd4229fc87cdba57a86dacb7a117710711",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "atg106/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 12392,
+    "sha256": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "gate.wav",
+    "assetType": "wav",
+    "restorePath": "atg106/experience/assets/gate.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3130,
+    "sha256": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "hit.wav",
+    "assetType": "wav",
+    "restorePath": "atg106/experience/assets/hit.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 5336,
+    "sha256": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lap.wav",
+    "assetType": "wav",
+    "restorePath": "atg106/experience/assets/lap.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7100,
+    "sha256": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "launch.wav",
+    "assetType": "wav",
+    "restorePath": "atg106/experience/assets/launch.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 13274,
+    "sha256": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "experience.zip",
+    "assetType": "zip",
+    "restorePath": "atg106/experience.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 45493,
+    "sha256": "8e2f2e7fd29ed24dd6314a9e9fbd2604e7eb86150225b301fa3b914c74af46ea",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 186220,
+    "sha256": "c124509eca5f7776f6355a8e4dcf193cec96b9dc7a35e68ceac80966da35e13a",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 78252,
+    "sha256": "1ddb64c19215410e0dfedec9d71fe28d71c061ed082b7bed34e826d8f852ee84",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58964,
+    "sha256": "c44f60765a94253dd4b6121f58b893936687a1f0c6a347b871f9e5fee89e0e9c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/references/lot82/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 154364,
+    "sha256": "7ef100a983d447e81433a3893fdef9d6827e4102d0331a4d0dc7c40d604c8ba4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/references/lot82/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 74748,
+    "sha256": "7c0788bae852d25c82475c27b9401e99b486c90b3dea34aec39f688e2fb8944a",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "atg106/references/lot82/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 51796,
+    "sha256": "8158106afaae601e2d6d2717486b21cd8f529d7aee40f2c0bf4cd16ecc930fea",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-custom.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/desktop-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 98347,
+    "sha256": "0db43e5f93938abf3907405644a84ad439e29f80ed48be94503a0f271f201d5f",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/desktop-finish.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 117354,
+    "sha256": "52e74393d13d0baa92ee5b310cf442f9d58a65a838bb7855d68cad0099b45425",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-lab.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/desktop-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 100658,
+    "sha256": "18a3bb0d0da9e87ba06575f08d56c2fa64f9908a395b33c8fe8ff784378b6a05",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-race.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/desktop-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 96219,
+    "sha256": "303ba350f9a8b6eeaf139f290dd1a11562f1cc8ef771ca3cffb1145d024b3567",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "event-horizon-pair.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/event-horizon-pair.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 84296,
+    "sha256": "e595c35bdaf8c509cd1e5e160e0a5ded6b90f8b214d5f87181b50540e714d3d6",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-custom.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/odd-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 83093,
+    "sha256": "6e8b6d948decfbbe20307ed5e8dbcb36246fdb8d493d36df4c1ff423f5b65fc1",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-lab.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/odd-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 84686,
+    "sha256": "183bf3dfd92cdf584bf404e7921d8f6ae138744b3b4daadfa16c60649d42e26c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-race.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/odd-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 80903,
+    "sha256": "af94677d4129d1a36c3608141a92e4ee2fea3ad41bb0e27d96616aa6da53d41e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-custom.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/phone-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66438,
+    "sha256": "541c752da4d4db16f34ad8a8ef0da30db3c74192cd33980461aa40f10b932d4e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-lab.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/phone-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66308,
+    "sha256": "79bf8154770c4ac63621d6f4d33e8e0f996ca375b71e4fb627e8e3c947a6a7c0",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-race.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/phone-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66864,
+    "sha256": "5f9ebe0ba72c94efc6498e99e18886af40e9134a2e5221016fd536982a76d02f",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-above.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 87374,
+    "sha256": "958d5e34daf3d9dbee787dce0e2c86cc45f206ebf577085cb8cb25b5116e92e2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-back.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-back.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 52801,
+    "sha256": "72ec00fcef74204f4046632d95ed571ba2fb58b3f62be00d85f3c464f01ac306",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-front.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 37575,
+    "sha256": "dc18695081bd6846f92a3238fbd0f64bd72420f385b8026a793d4d4d7d9cc6bc",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-lod1.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-lod1.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 42259,
+    "sha256": "22742b8d81f44463ecf206e8419b67b177ced2e1dc0a6549b45b661ca5fefc53",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-lod2.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-lod2.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 11196,
+    "sha256": "fbe9cccdf09eac7fbc899c2320752dd779d9237c08cbe5bbd37c569c3ed1e5e9",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg106/reports/tower-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 53585,
+    "sha256": "98d6686ecd18bae311b0cb2a7108019edcf04de84a8e5bd00732bcd8bc80c1de",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "checkpoint.wav",
+    "assetType": "wav",
+    "restorePath": "atg82/experience/assets/checkpoint.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7982,
+    "sha256": "3833fae36a72a06c20e905e185766e398b8572e58fc78cd1824860fef05a93c5",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "fall.wav",
+    "assetType": "wav",
+    "restorePath": "atg82/experience/assets/fall.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7982,
+    "sha256": "a06b5c48f98ed9a68cce8dc3248608c34a079e4de790e29bf3a06c6faed3fff4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "atg82/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 15478,
+    "sha256": "75e48293418354072832d3096a0b6e2837cf253d463a0986b12f1ab8953ef8c3",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "jump.wav",
+    "assetType": "wav",
+    "restorePath": "atg82/experience/assets/jump.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3572,
+    "sha256": "0f93be8b2b82533262532dcd032e62a813c55c282388d8376dad5b71108284f7",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "experience.zip",
+    "assetType": "zip",
+    "restorePath": "atg82/experience.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 38115,
+    "sha256": "298c82bb7e2b5de969220e33d5ab779e9330bfb23c00ab3c3fdcba3a073cab58",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "atg82/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 154364,
+    "sha256": "7ef100a983d447e81433a3893fdef9d6827e4102d0331a4d0dc7c40d604c8ba4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "atg82/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 74748,
+    "sha256": "7c0788bae852d25c82475c27b9401e99b486c90b3dea34aec39f688e2fb8944a",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "atg82/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 51796,
+    "sha256": "8158106afaae601e2d6d2717486b21cd8f529d7aee40f2c0bf4cd16ecc930fea",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish-hud.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/desktop-finish-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 72121,
+    "sha256": "12dd8c3e12f33d75293efffb30c0dd9c40808ac64e3e1c5ae078be3218dde805",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/desktop-finish.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 143340,
+    "sha256": "183dd4e5f6f8ab5fa9af4df017026cbe9824fb835220f4e6a3471624e764872f",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-start-hud.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/desktop-start-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 76154,
+    "sha256": "f7d9a3b7b5d2fb014f2f92c9ea57c5c17d11d89fa49b21838f383dfc4be9813c",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-start.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/desktop-start.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 148024,
+    "sha256": "952811fef1f24da7062eff2db5daea175d0291849a98a133b84716c85389d5de",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-start-hud.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/odd-start-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 77376,
+    "sha256": "b1b4dd91db4675537e4665f24dc3487b0b21cf7d6dd1b015646ce372ce6f5573",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-start.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/odd-start.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 118812,
+    "sha256": "15852337f91dd9b8bce8f7e1e259814482152bfdf7a66846d72e8f8c79e1acdf",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-start-hud.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/phone-start-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 79901,
+    "sha256": "b82fc21d295ffdcc8523cc9ef57390eb99b11b735e1042779e15d728063b2fec",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-start.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/phone-start.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 73289,
+    "sha256": "a96004944197aef2247ed9ff62bfff994688fe958fc60fa0d9ff83327fde61ab",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-above.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/tower-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 126493,
+    "sha256": "0d5c731cff5922dbf52c7ff992847aae5e45224aeb3c1ea20be819e1480e81a5",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-back.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/tower-back.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 60023,
+    "sha256": "e609ded7e8d5991644bdd88712ab4b309dda155d0465cb899c4bf4e959886f88",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-front.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/tower-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 48150,
+    "sha256": "ccc5350ca49fa00d3335ee513aef4fbb93643b56127d7b12c4963855a162c2f0",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "atg82/reports/tower-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 70174,
+    "sha256": "0585ddbaff34e3239d577bbbcdaeea2c5a7430e766deff092d5c970003ce931d",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "RAMPAGE-working.blend",
+    "assetType": "blend",
+    "restorePath": "production011/RAMPAGE/RAMPAGE-working.blend",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 351820148,
+    "sha256": "1b97a42f54e5b5f255b93bef40f3c0bb11d64c46c1abaf1532bffc989c08f5c6",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod0-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 636775,
+    "sha256": "44ae04ea83ae65a62ab115cf0c6246e8ccc13a531676ac5426352888c288df41",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod0-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 655995,
+    "sha256": "573f8e2c6848544fdd15b0de45ed4c77fabde133289af8c6c0b6cb2ae6aa16b4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-street.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod0-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 678861,
+    "sha256": "c15bd51e7caa51a8dd4bc7aa098391bff0ea9a2bcd8d65d1562cc34ced0b617e",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "production011/RAMPAGE/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 4566144,
+    "sha256": "a85a944d736371e7bbb33685e7a2210f0e61ea584721df77f6946067517efec4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod1-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 652707,
+    "sha256": "6fb6307aaaab057b87acedef7ef7d9bc4d8b749d59ed01ccbd1d1651627abe7f",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod1-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 681255,
+    "sha256": "b938862d176dec2e0f24504b4ebede48884a0922184c09b8339cf5520b36635f",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-street.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod1-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 694538,
+    "sha256": "30dbd5691c2d8e93f12ed093b7a8a88a2bc9beb006ed7b82b9f9617fc5c39d4b",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "production011/RAMPAGE/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 827412,
+    "sha256": "403b9657eaa8b6396b49dd560814905f93da24eb9519cf93e951b70d5893f8d4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod2-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 600224,
+    "sha256": "327431ab9be5de7bf8ae01a5fdc579bcedea210b24d3143e02bf629a427df458",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod2-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 622464,
+    "sha256": "95aea56342498048a1896815b79bae56853c9f09c886d95d3693ca2a8742170e",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-street.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/lod2-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 625391,
+    "sha256": "19b98ed8fbc21df00b9d703b767d915c7999f236b8682736d3c0cd72811dbe19",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "production011/RAMPAGE/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 125772,
+    "sha256": "bdd63d5b7df8c7bd82254d81d20bc185f0347a15b5cda3e77e284c2d1606bab3",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/original-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 630935,
+    "sha256": "0331984fa5b3d58cadd99af2aa0387dbbce986aee783e7345224b5c461e8477c",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/original-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 642930,
+    "sha256": "d8e1a110209b17dc2447df189da4f1972534dd6b08c4dc8b1701a1e34ced97c3",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-street.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE/original-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 670365,
+    "sha256": "c9de284d673fa51b03c70e1da3d91680f77de9ceebaee87ef0cc90fcefa5f5fa",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "RAMPAGE-LOD-comparison.png",
+    "assetType": "png",
+    "restorePath": "production011/RAMPAGE-LOD-comparison.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 695944,
+    "sha256": "ecf6f1a088cd1ad293887ba14acf75f0bb2f08bc10796a88821afa91d596b9a9",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR-working.blend",
+    "assetType": "blend",
+    "restorePath": "production011/ZELTAR/ZELTAR-working.blend",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 282041711,
+    "sha256": "304aec5da423a55918c778aceea20409e98df9780b98b293a3f6b299c2544d9e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod0-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 634389,
+    "sha256": "bd943e724cb7593c5d18f8e5b98b4ebac68cbb737590993140738308c2d26744",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod0-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 653443,
+    "sha256": "533a63e612ccffc4ba0169903eff27ac5b0e224620be06cea84dbdc19901d431",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0-street.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod0-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 656792,
+    "sha256": "045fa51ddb82056084e75eb8d28700d1833fba8b66fbddd00a7b76f8f9f9569e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "production011/ZELTAR/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 4174648,
+    "sha256": "4adaede956f11dbe44fef758f05409446706921d7cd4518128fa4b23895a0159",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod1-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 645863,
+    "sha256": "863dcfcbfe84267a0c8dc48167090089632fcdfab6f8448469e99e28ae63c843",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod1-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 667491,
+    "sha256": "e5d6bbdbe2e244a8001b8544f42c142b3700990201b292bfb67fbaa14ced39b2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1-street.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod1-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 675605,
+    "sha256": "7ca564f22249eb9f348cbfce9892b4b88a3a4dc7ea70efe5278b1e02c471ce15",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "production011/ZELTAR/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 744744,
+    "sha256": "fbc36deed9548e6f588bda94f19c0f489dcdf08ddb39dfcadb2984b6efe6db50",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod2-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 616748,
+    "sha256": "78e19583a9bcd5b59c8d62e37404c571b81574bc6e9d76c4184c109204b1a538",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod2-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 632192,
+    "sha256": "3147c549406f02ee4bec82fa4167887d0a035b2d37b2d2eab051ac682f737a8d",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2-street.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/lod2-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 632771,
+    "sha256": "5846a1d0208f69e111f35e57dfe396e089016fc6b52659612ee01c8ae2e1796c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "production011/ZELTAR/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 122616,
+    "sha256": "f908e73b9b5b70536c8a7cf5981503d2a3aa19a08854340445551fce02c68fc7",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-elevated.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/original-elevated.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 628807,
+    "sha256": "59b178ed44986ed75c6ddd2a8520e027c5b5e0f2894775da802dde4332f615e9",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-rear.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/original-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 653265,
+    "sha256": "9f8cbce2d78325e0735a47e3bfc9bff744b135399ebd82510b7785118190f0af",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "original-street.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR/original-street.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 651416,
+    "sha256": "7187f8e5f4ddd84efbc78998075c093fa51040ca629e812ca92695e10a2b2fce",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR-LOD-comparison.png",
+    "assetType": "png",
+    "restorePath": "production011/ZELTAR-LOD-comparison.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 650191,
+    "sha256": "d75f1c65955c5f9e37c196a36d2b426814058e337baea3578ffeec681127d336",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER-approved-moodboard.png",
+    "assetType": "png",
+    "restorePath": "references/VIPER-approved-moodboard.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3057768,
+    "sha256": "d9d5dad536dadbfc21cf4e2de22ccf3ff820aaaae5a25cc0f3a4f7fdb01bacd5",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "COMET-preview.glb",
+    "assetType": "glb",
+    "restorePath": "releases/lot106-rc008/experience/assets/COMET-preview.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 118948,
+    "sha256": "2f2b17c0aad7b0147ed87941791682b0d6118b66ba32eac075c9f7cede81f4f2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER-preview.glb",
+    "assetType": "glb",
+    "restorePath": "releases/lot106-rc008/experience/assets/VIPER-preview.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 332992,
+    "sha256": "29bdc705b22367c66e1266f05df2a75395c82eae4b96e456adda124b654f7716",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "releases/lot106-rc008/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 12392,
+    "sha256": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "gate.wav",
+    "assetType": "wav",
+    "restorePath": "releases/lot106-rc008/experience/assets/gate.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3130,
+    "sha256": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "hit.wav",
+    "assetType": "wav",
+    "restorePath": "releases/lot106-rc008/experience/assets/hit.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 5336,
+    "sha256": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lap.wav",
+    "assetType": "wav",
+    "restorePath": "releases/lot106-rc008/experience/assets/lap.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7100,
+    "sha256": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "launch.wav",
+    "assetType": "wav",
+    "restorePath": "releases/lot106-rc008/experience/assets/launch.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 13274,
+    "sha256": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "experience.zip",
+    "assetType": "zip",
+    "restorePath": "releases/lot106-rc008/experience.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 112884,
+    "sha256": "cbc61d455968b5640fcc2182463ab08cf80a8a6dcfc7c15db2a0923149cd00e0",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "releases/lot106-rc008/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 185328,
+    "sha256": "5ecc212548be840f217f5f139709b83a47b63f6d6a0889160180ce877605a47b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "releases/lot106-rc008/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 77792,
+    "sha256": "f9392af8f033b6a401a9e7759d814d688cd108bf91de270277f3cdcb69ef982e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "releases/lot106-rc008/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58796,
+    "sha256": "e600680041b2e1bd31f38d3372a9425d30e57ce7e779e4978a244b03b8fafb10",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-custom-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/desktop-custom-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 56492,
+    "sha256": "5f6d93e9a9f68a86d451a8b416ea98bc8e89bce304453ca703b15b592402c4d7",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/desktop-finish-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 59675,
+    "sha256": "b396b610307caf743b15a4d6bd4e317cc00eec6eb01dcdbe541ce22d80810868",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-lab-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/desktop-lab-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 57061,
+    "sha256": "37adbe2bf67636f268b63db02abb1b3f18916dbfc8fc973c05522df6ba5fcfff",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-race-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/desktop-race-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 48438,
+    "sha256": "3e467d7aeb13cde53b665b472b0dbb76bdd83bf55d975a5b1204426cace57a61",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-viper-reference-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/desktop-viper-reference-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 56712,
+    "sha256": "292d68d767d2670410a134745a71fe62c38f2eac2473fb6dfa697cbff54e9664",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "internal-devkit-phone.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/internal-devkit-phone.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 156671,
+    "sha256": "bb1e4e36ab515d86a96f2fd2a948b67553951467104c10d65bbe4f41c38529c5",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "internal-race-visual.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/internal-race-visual.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 166831,
+    "sha256": "936732e20b296117d76d232769e4ef907bda372932f78342ac4993bb5433798d",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-custom-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/odd-custom-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 57530,
+    "sha256": "1793f9679461b8c5a5871a5f686fd37e05605a6ba4a5d3a5e81199b6bb9ba4e5",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-lab-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/odd-lab-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58028,
+    "sha256": "2f367e8872ade417172281c19936a181fc9a44ed302cf7285f35214eb4ca44a9",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-race-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/odd-race-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 49394,
+    "sha256": "3db871ad02378bff9b1ebca86416177eccc89c228f05cc85145187c5ab987142",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-viper-reference-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/odd-viper-reference-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 57751,
+    "sha256": "bd1e44b91ff032c1edb6ba915350b223626aec26893b775287ba734a9dcd7f08",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-custom-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/phone-custom-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58970,
+    "sha256": "3dccd7abde3c1018df1fd16ac225ea85bc8a7f10cacfb3d3b0044bc4b96d81e1",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-lab-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/phone-lab-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 60300,
+    "sha256": "87e88933068fcd856ffae7f1ecf7016b3dd455f152330a4aabae32e961673a3a",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-race-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/phone-race-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 64239,
+    "sha256": "eb1e35e2677010784c38e60497c6552370262d1befeed24cd82a80e5187a2fc1",
+    "associatedProperty": "shared_or_unknown",
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-viper-reference-hud.png",
+    "assetType": "png",
+    "restorePath": "reports/rc008/phone-viper-reference-hud.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58781,
+    "sha256": "20750f65607b46acbb22a2eb72efb8b1a85855589ed51a3f578c222a126bd6c8",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/baseline/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 12392,
+    "sha256": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "gate.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/baseline/experience/assets/gate.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3130,
+    "sha256": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "hit.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/baseline/experience/assets/hit.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 5336,
+    "sha256": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lap.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/baseline/experience/assets/lap.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7100,
+    "sha256": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "launch.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/baseline/experience/assets/launch.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 13274,
+    "sha256": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "experience.zip",
+    "assetType": "zip",
+    "restorePath": "zeltar106/baseline/experience.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 45493,
+    "sha256": "8e2f2e7fd29ed24dd6314a9e9fbd2604e7eb86150225b301fa3b914c74af46ea",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/baseline/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 186220,
+    "sha256": "c124509eca5f7776f6355a8e4dcf193cec96b9dc7a35e68ceac80966da35e13a",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/baseline/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 78252,
+    "sha256": "1ddb64c19215410e0dfedec9d71fe28d71c061ed082b7bed34e826d8f852ee84",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/baseline/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58964,
+    "sha256": "c44f60765a94253dd4b6121f58b893936687a1f0c6a347b871f9e5fee89e0e9c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "finish.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/experience/assets/finish.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 12392,
+    "sha256": "d6f6c449e3c677c6761b6e38aa08a9b9da0c0d81b6e502f14e7d51d0068bd831",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "gate.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/experience/assets/gate.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 3130,
+    "sha256": "7487ffcd4975597f55fad0b8d7721a4a5ebe4f941ff71509c99dfed9269273eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "hit.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/experience/assets/hit.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 5336,
+    "sha256": "fa05e9decf3b67be649353ee1256f0c6edf066290115a7a54190139de129008b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lap.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/experience/assets/lap.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 7100,
+    "sha256": "b965d80af4280c064f562877069e4004ab9ca3c2da90ceb403a3bb5cdd8930ec",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "launch.wav",
+    "assetType": "wav",
+    "restorePath": "zeltar106/experience/assets/launch.wav",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 13274,
+    "sha256": "14dfa435bf8edfbf8ad79f52d165e25742aa0bd965acf26b6cbe914597070855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "COMET.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/experience/assets/zelpods/COMET.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 118948,
+    "sha256": "2f2b17c0aad7b0147ed87941791682b0d6118b66ba32eac075c9f7cede81f4f2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "TITAN.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/experience/assets/zelpods/TITAN.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 143516,
+    "sha256": "a534c811965b1b1fd199bc51bc1281930396b8c3fd7dcee872a324e991cabc94",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/experience/assets/zelpods/VIPER.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 117108,
+    "sha256": "fee88719870438c38bd30a1f6ec6798c2ba07e848a3fb179020d9a80485d20d0",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "experience.zip",
+    "assetType": "zip",
+    "restorePath": "zeltar106/experience.zip",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 93565,
+    "sha256": "8ce63cf99bfe32385a4a6900e2eb8413c7309ea22fec1f24a1cca53c5052453c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 185356,
+    "sha256": "5b0dfb1e5d16fdc00fb6dfb8cc1c2cf7b3ea7530413c4f71a7228acfe68541f5",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 77832,
+    "sha256": "cb7cdba2e7eb5cf6c3294c0526c194602329032f81aaa4004fcb0841593aedf8",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 58812,
+    "sha256": "58ef4964e006aefb62bcb9e6e13875841db4e37917135ad47712304790626ecf",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "COMET.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/models/COMET.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 118948,
+    "sha256": "2f2b17c0aad7b0147ed87941791682b0d6118b66ba32eac075c9f7cede81f4f2",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "TITAN.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/models/TITAN.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 143516,
+    "sha256": "a534c811965b1b1fd199bc51bc1281930396b8c3fd7dcee872a324e991cabc94",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "VIPER.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/models/VIPER.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 117108,
+    "sha256": "fee88719870438c38bd30a1f6ec6798c2ba07e848a3fb179020d9a80485d20d0",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod0.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/references/lot82/exterior/lod0.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 154364,
+    "sha256": "7ef100a983d447e81433a3893fdef9d6827e4102d0331a4d0dc7c40d604c8ba4",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod1.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/references/lot82/exterior/lod1.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 74748,
+    "sha256": "7c0788bae852d25c82475c27b9401e99b486c90b3dea34aec39f688e2fb8944a",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "lod2.glb",
+    "assetType": "glb",
+    "restorePath": "zeltar106/references/lot82/exterior/lod2.glb",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 51796,
+    "sha256": "8158106afaae601e2d6d2717486b21cd8f529d7aee40f2c0bf4cd16ecc930fea",
+    "associatedProperty": 82,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR_Interface_Preview.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZELTAR_Interface_Preview.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 307411,
+    "sha256": "32fcfe37b8d0525f1ef8ba788c0c1548983f9bc2d8554b9924f697b91b538e8e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZELTAR_ZelPod_Fleet_Preview.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZELTAR_ZelPod_Fleet_Preview.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 134305,
+    "sha256": "942d2353608282e1a3fab7087db8ebd4c8786f0f44bf64b84ec937146f6765ba",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-above.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-COMET-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 33045,
+    "sha256": "f59b796002cebeb998c7ab35aa039749cd43a3607f4962469e2b0cdd78d11a60",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-front.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-COMET-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 31802,
+    "sha256": "bdaeb6e9353f7e6445044106ebc3c1a966725bc82e5b6bb13b93fc44f5760d31",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-rear.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-COMET-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 29624,
+    "sha256": "d215d8b203460b2c1efcd3d655c153a3b2e76711df9a37e37b6cabbc45af37cb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-side.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-COMET-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 20873,
+    "sha256": "51d6e0f28f79e3ac611330a9e2b25423c9e89a62efa14c99c1f4f4d05d59e4c9",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-COMET-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-COMET-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 34214,
+    "sha256": "88bd934de869aad29432854f1b9b19d17ec894af01e11cea2747a01f468bb9ed",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-above.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-TITAN-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 34449,
+    "sha256": "9e7ff1359106a8f27a6094fbb82cc2e36919f8e5b0473129735ea1438dc68d8b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-front.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-TITAN-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 33912,
+    "sha256": "649573f21aff3675bfc8353f57a0ff4e63133bc8be32b2b06071f0bfde3ba682",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-rear.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-TITAN-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 31125,
+    "sha256": "51acfa3cb87b81cb8d2924992c08dada4dcc5e1684de1df7ffa43a2391234dae",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-side.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-TITAN-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-TITAN-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-TITAN-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 36047,
+    "sha256": "59f6eb34c8dbe17daf07edc549a5c5da4c6b2dc093cc3c009d938b169a8a0888",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-above.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-VIPER-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 32203,
+    "sha256": "66bdb98d93506a2ce0c86cb20769a67ee82cde66cdc41e535e3148affe3c8d39",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-front.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-VIPER-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 30501,
+    "sha256": "d83613614bf545bb34ddbcdc2ea6805796d79965aa701ffae0f99e4fd1069ab4",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-rear.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-VIPER-rear.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 25541,
+    "sha256": "5979ecd74ff49d2d509ae0481395ebc40a736545504192b7881b20ada4b7aac5",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-side.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-VIPER-side.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 20777,
+    "sha256": "88d0d965e35150a4453526b13ae0b2170f0f58129386e478c41c9596556ca725",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "ZelPod-VIPER-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/ZelPod-VIPER-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 31251,
+    "sha256": "bf419eeb92c0221c5650fd731739e866f624bf697654d4e47eeba1a3c35a562e",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-custom.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/desktop-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 106723,
+    "sha256": "c316d21ed0e67ff2a48da56497337ed6447ccd6e57be9b629da23a9b8be7cbce",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-finish.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/desktop-finish.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 121273,
+    "sha256": "5879d673a7966f7efb6033bfe790d6d21c6d7bbf665477f4a83e9ad24b7f6a11",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-lab.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/desktop-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 108673,
+    "sha256": "bddaf6200b6905a32d241fc91116e511bebfe8358b09d523a201cc2edf1ca3fc",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "desktop-race.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/desktop-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 100851,
+    "sha256": "ac68193aec39f32180dd128f170595abe63e4514c05866d02744d9c18049f4eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "event-horizon-pair.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/event-horizon-pair.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 84241,
+    "sha256": "dc7caea9319555aa44162b038884dd3039167c8c19f86298b49b4bbccda8d6c1",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-custom.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/odd-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 89699,
+    "sha256": "c047f6325184b2bbd899033656a12860aa493b0a39500a98fa984d361b779846",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-lab.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/odd-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 90824,
+    "sha256": "bca0933b2802dacefa4a0bf2748db0206d62e23ad323c018bb493720d16b1fdb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "odd-race.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/odd-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 83968,
+    "sha256": "576327e1193345453e2602676262a1bbd2cf69d90e2e8e7cf327bb5733c81387",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-custom.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/phone-custom.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66099,
+    "sha256": "f56efc33fef961cc18e294fe8c79f826ff53242d5611855664e4bea7910586eb",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-lab.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/phone-lab.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 66386,
+    "sha256": "e4764fa4a6439f6c630b0031d35a56b0da7c9fc117f70c2b16f8d9a7c478415b",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "phone-race.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/phone-race.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 69771,
+    "sha256": "ad758b89777f7ddcbc4582d3b351ab189bf3003574a92708399cb0d64507d21a",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-COMET.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/silhouette-COMET.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 427,
+    "sha256": "9630cb9e38fe7db175b55e781fa8f899d8471978a268455109fd1474a991b854",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-TITAN.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/silhouette-TITAN.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 403,
+    "sha256": "3c04e2a64b4365c8d8914fe79625b34059a08ff327db9fbcc4dc0ab19b04b4ff",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "silhouette-VIPER.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/silhouette-VIPER.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 388,
+    "sha256": "e3aff5300dd0aff566ed002cc456e35ea7c875a3189e11ad75f3fc1be91414a7",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-above.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/tower-above.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 87321,
+    "sha256": "4df29fa2159c4495c50385bbc2be9ac42fee76a5b3f2ce6d53d95ea89b06d674",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-back.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/tower-back.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 52801,
+    "sha256": "72ec00fcef74204f4046632d95ed571ba2fb58b3f62be00d85f3c464f01ac306",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-front.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/tower-front.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 37489,
+    "sha256": "c2ad232bbf59c924865e43e7ae569a239dcb99eed8f7d1a63b55314776fc86d9",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "tower-three-quarter.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/tower-three-quarter.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 53585,
+    "sha256": "2b279a5f18af161afac17841cbd5465cdd83a0c56a9ef633f20bfdd69f00684c",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-COMET.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/wireframe-COMET.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 89270,
+    "sha256": "0897363881ecebef1485d50044f365c2cbc1e760b1c8766891fd2401a1005e59",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-TITAN.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/wireframe-TITAN.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 119957,
+    "sha256": "2c9eccec2d909d5327ad891e61ebaaf4193c68521cf581afb0db09e05f4b3ddc",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  },
+  {
+    "filename": "wireframe-VIPER.png",
+    "assetType": "png",
+    "restorePath": "zeltar106/reports/wireframe-VIPER.png",
+    "storageLocation": "Owner-managed private source backup; not included in the public repository",
+    "fileSizeBytes": 82361,
+    "sha256": "ccca9490e5963ca6be65e9d961f330730b2f9c22b08d093332d1e34cafffe955",
+    "associatedProperty": 106,
+    "distributionStatus": "PRIVATE \u2014 public distribution not approved"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "atg-project0-lot82",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/rules.test.mjs"
+  }
+}

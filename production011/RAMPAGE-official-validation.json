@@ -1,0 +1,134 @@
+{
+  "ok": true,
+  "reports": {
+    "lod0": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "bytes": 4566144,
+        "triangles": 86000,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 3,
+        "maxTextureSize": 1024,
+        "texels": 4194304,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "animationNames": [],
+        "bounds": {
+          "min": [
+            -12.162140846252441,
+            0,
+            -7.958055019378662
+          ],
+          "max": [
+            12.189678192138672,
+            36.38935852050781,
+            7.965256214141846
+          ]
+        }
+      },
+      "budget": {
+        "triangles": 87500,
+        "drawCalls": 14,
+        "materials": 4,
+        "textures": 8,
+        "maxTextureSize": 1024,
+        "texels": 8388608,
+        "skinnedMeshes": 2,
+        "bones": 64,
+        "animations": 8,
+        "fileBytes": 6553600,
+        "uploadBytes": 26214400
+      }
+    },
+    "lod1": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "bytes": 827412,
+        "triangles": 11999,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 2,
+        "maxTextureSize": 512,
+        "texels": 699051,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "animationNames": [],
+        "bounds": {
+          "min": [
+            -12.129780769348145,
+            0,
+            -7.881809234619141
+          ],
+          "max": [
+            12.16153335571289,
+            33.31427001953125,
+            7.882318496704102
+          ]
+        }
+      },
+      "budget": {
+        "triangles": 12500,
+        "drawCalls": 4,
+        "materials": 2,
+        "textures": 2,
+        "maxTextureSize": 512,
+        "texels": 734003.2,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 1310720,
+        "uploadBytes": 8388608
+      }
+    },
+    "lod2": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "stats": {
+        "bytes": 125772,
+        "triangles": 1250,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 1,
+        "maxTextureSize": 256,
+        "texels": 87381,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "animationNames": [],
+        "bounds": {
+          "min": [
+            -11.994136810302734,
+            0,
+            -7.722221374511719
+          ],
+          "max": [
+            11.459917068481445,
+            31.927871704101562,
+            7.903264999389648
+          ]
+        }
+      },
+      "budget": {
+        "triangles": 1330,
+        "drawCalls": 1,
+        "materials": 1,
+        "textures": 1,
+        "maxTextureSize": 256,
+        "texels": 94371.84,
+        "skinnedMeshes": 0,
+        "bones": 0,
+        "animations": 0,
+        "fileBytes": 278921,
+        "uploadBytes": 2097152
+      }
+    }
+  }
+}

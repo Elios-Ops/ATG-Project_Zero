@@ -1,0 +1,10 @@
+{
+  "price": 0,
+  "prize": 0,
+  "mode": "top",
+  "places": 3,
+  "lowWins": false,
+  "scoreUnit": "points",
+  "minSeconds": 10,
+  "paused": false
+}

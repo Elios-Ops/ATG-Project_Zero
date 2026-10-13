@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "gapMetres": 4.0,
+  "gapFacing106": "+X",
+  "flow82": "-X, verified from preserved source; no live exterior reference",
+  "flow106": "+X, opposite advection sign",
+  "clock": "p0Time, no per-client offset",
+  "clockModel": {
+    "baseSpeedMetresPerSecond": 4,
+    "rowTrailPeriodMetres": 13,
+    "logosCycleSeconds": 12
+  },
+  "noVertexDisplacement": true,
+  "noExteriorParticles": true,
+  "lot82FilesUnchanged": true,
+  "livePairVerified": false
+}

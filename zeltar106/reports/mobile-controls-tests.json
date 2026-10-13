@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "view": "390x844",
+  "touchSelection": "TITAN",
+  "checks": [
+    "touch pod/paint/lights/fins",
+    "touch launch",
+    "36-gate race through the built-in stick key path",
+    "exact points submission once",
+    "reward/table updates",
+    "touch replay",
+    "touch boost",
+    "touch return to Lab",
+    "slow-frame resolution reduction"
+  ],
+  "score": 97512,
+  "pixelRatioCap": 1,
+  "slowPixelRatio": 0.65
+}

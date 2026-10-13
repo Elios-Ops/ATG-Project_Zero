@@ -1,0 +1,14 @@
+{
+  "workingTreeFilesScanned": 644,
+  "historyBlobsScanned": 379,
+  "nestedArchivesInspected": 35,
+  "workingTreeFindings": [],
+  "historyFindings": [],
+  "historyCommits": [
+    "bb5549c4d7bd0b106b135df06e5ff7c9e08de0ab ATG Project0: preserve tower references and audit architecture revision baseline",
+    "a0febcea40d51c231eddc2e2effbe52826629c03 ATG Project0: preserve Gladiator Gauntlet, ZELTAR and Event Horizon"
+  ],
+  "reportedCheckpoint": "ca8c630",
+  "reportedCheckpointObjectAvailable": false,
+  "limitations": "Pattern audit is not a guarantee against every possible credential. Binary assets/private reports are excluded from public export; credential-related text and exported files receive additional review."
+}

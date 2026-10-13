@@ -1,0 +1,34 @@
+{
+  "started": true,
+  "crash": null,
+  "seconds": 17.1,
+  "frames": 574,
+  "fps": 38.1,
+  "firstFrame": 2.3,
+  "worstFrame": 332,
+  "slowFrames": 1,
+  "errors": [],
+  "logs": [
+    "ATG Design Lab ready: 3 free ZelPods, 5 paints, 3 lights, fins; 3-lap circuit.",
+    "ATG Design Lab ready: 3 free ZelPods, 5 paints, 3 lights, fins; 3-lap circuit.",
+    "ATG race start COMET",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}",
+    "ATG race progress {\"gate\":1,\"lap\":1,\"finished\":false}"
+  ],
+  "violations": [],
+  "hud": [
+    "ZelPod Lab: 1/2/3 vehicle \u2022 C paint \u2022 L lighting \u2022 F fins \u2022 Space race\nRace: W accelerate / S brake \u2022 A/D steer \u2022 Shift boost \u2022 R retry \u2022 B Lab \u2022 I invite\nTouch: stick drives; tap free Lab options or BOOST / RETRY. Three laps, all gates in order. Barrier hit +1s. Higher points win. Esc leaves."
+  ],
+  "sent": {
+    "messages": 0,
+    "sets": 0,
+    "inputs": 0
+  }
+}
