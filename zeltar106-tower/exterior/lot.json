@@ -1,0 +1,8 @@
+{
+  "materials": {
+    "Armor": { "glow": 0.3 },
+    "Neon": { "surface": "neon.glsl", "glow": 1.5 },
+    "Glass": { "surface": "glass.glsl", "transparent": true, "glow": 0.2 },
+    "EventDisplay": { "surface": "event-horizon.glsl", "additive": true, "glow": 0.9 }
+  }
+}

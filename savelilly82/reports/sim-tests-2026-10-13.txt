@@ -1,0 +1,13 @@
+PASS foundry: route completes (invincible) in 12.3s {"result":"clear","t":12.3,"deaths":0,"score":1000,"gears":10,"step":12,"of":14,"causes":{},"hero":[14,23.4]}
+PASS machine: route completes (invincible) in 33.2s {"result":"clear","t":33.2,"deaths":0,"score":3700,"gears":24,"step":21,"of":22,"causes":{},"hero":[119.93,0]}
+PASS ascent: route completes (invincible) in 46.7s {"result":"clear","t":46.7,"deaths":0,"score":2800,"gears":20,"step":51,"of":53,"causes":{},"hero":[9,70]}
+PASS warden: route completes (invincible) in 15.6s {"result":"bossDefeat","t":15.6,"deaths":0,"score":20700,"gears":7,"step":15,"of":16,"causes":{},"hero":[24.8,9.1]}
+PASS foundry: autopilot finishes 12/12 with hazards; median 12.3s; avg deaths 0.2 {"drum":2}
+PASS machine: autopilot finishes 12/12 with hazards; median 33.2s; avg deaths 0.2 {"volt":2}
+PASS ascent: autopilot finishes 12/12 with hazards; median 46.6s; avg deaths 0.4 {"drum":5}
+PASS warden: autopilot finishes 12/12 with hazards; median 31.5s; avg deaths 1.3 {"beam":8,"shockwave":3,"drum":4}
+PASS deterministic for a seed
+PASS idle player: gameover at 31.4s
+PASS ascent: the Surge catches an idle player (gameover at 14.1s)
+PASS respawn at checkpoint 1 (21.50, 11.50) lives 2
+ALL PASS

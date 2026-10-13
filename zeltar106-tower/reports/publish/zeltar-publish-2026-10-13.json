@@ -1,0 +1,143 @@
+{
+ "date": "2026-10-13",
+ "lot": 106,
+ "validate": {
+  "ok": true,
+  "lods": {
+   "lod0": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 731800,
+     "triangles": 10662,
+     "drawCalls": 4,
+     "materials": 4,
+     "textures": 3,
+     "maxTextureSize": 64,
+     "texels": 16384,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -12.1850004196167,
+       0,
+       -12.154891967773438
+      ],
+      "max": [
+       12.154891967773438,
+       56.900001525878906,
+       12.154891967773438
+      ]
+     }
+    }
+   },
+   "lod1": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 135144,
+     "triangles": 1920,
+     "drawCalls": 2,
+     "materials": 2,
+     "textures": 2,
+     "maxTextureSize": 64,
+     "texels": 10923,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -12.15999984741211,
+       0,
+       -12.12398624420166
+      ],
+      "max": [
+       12.12398624420166,
+       56.900001525878906,
+       12.12398624420166
+      ]
+     }
+    }
+   },
+   "lod2": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 11148,
+     "triangles": 128,
+     "drawCalls": 1,
+     "materials": 1,
+     "textures": 1,
+     "maxTextureSize": 64,
+     "texels": 5461,
+     "skinnedMeshes": 0,
+     "bones": 0,
+     "animations": 0,
+     "animationNames": [],
+     "bounds": {
+      "min": [
+       -11.600000381469727,
+       0.10000000149011612,
+       -11.600000381469727
+      ],
+      "max": [
+       11.600000381469727,
+       56.900001525878906,
+       11.600000381469727
+      ]
+     }
+    }
+   }
+  }
+ },
+ "publish": {
+  "ok": true,
+  "status": "live",
+  "reviewed": true,
+  "submission": 4979
+ },
+ "live": {
+  "id": 106,
+  "name": "ZELTAR",
+  "description": "A silver racing tower by All Things Gamed: ZelPod showroom, swept wing fins, a cyan racing stripe spiralling to the crown. Its Event Horizon display pours energy toward the gap it shares with RAMPAGE.",
+  "version": "4b00e51f7b5a8b94-7fc57247045560ac",
+  "credits": [
+   {
+    "work": "Architecture, shaders and textures",
+    "by": "All Things Gamed"
+   }
+  ]
+ },
+ "post_publish_lots": [
+  {
+   "id": 82,
+   "name": "RAMPAGE",
+   "version": "9e2b40d6efafe702-cd2b6446ee1a7dc8",
+   "experience": "8619fc7c57b6039b"
+  },
+  {
+   "id": 106,
+   "name": "ZELTAR",
+   "version": "4b00e51f7b5a8b94-7fc57247045560ac",
+   "experience": null
+  },
+  {
+   "id": 154,
+   "name": null,
+   "version": null,
+   "experience": null
+  },
+  {
+   "id": 4294,
+   "name": null,
+   "version": null,
+   "experience": null
+  }
+ ]
+}

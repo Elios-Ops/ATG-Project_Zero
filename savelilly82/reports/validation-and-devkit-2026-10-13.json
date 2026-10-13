@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-13",
+ "lot": 82,
+ "published": false,
+ "official_validation": {
+  "endpoint": "POST /api/agent/lots/82/experience/validate",
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "findings": [],
+  "hash": "807e0d09bdc046ff",
+  "stats": {
+   "files": 65,
+   "bytes": 2674204,
+   "sourceBytes": 207155,
+   "bundleBytes": 215645
+  }
+ },
+ "devkit_runs": {
+  "full_arcade_run_autopilot_invincible_gpu": {
+   "entry": "__test-entry.js",
+   "size": "1280x720",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 17.4,
+   "worst_ms": 18,
+   "run": {
+    "won": true,
+    "score": 67200,
+    "time": 108.5,
+    "difficulty": "normal",
+    "stages": [
+     {
+      "id": "foundry",
+      "time": 13.016666666666893,
+      "deaths": 0,
+      "gears": 10,
+      "keeps": 0
+     },
+     {
+      "id": "machine",
+      "time": 33.23333333333273,
+      "deaths": 0,
+      "gears": 24,
+      "keeps": 1
+     },
+     {
+      "id": "ascent",
+      "time": 46.649999999998634,
+      "deaths": 0,
+      "gears": 21,
+      "keeps": 1
+     },
+     {
+      "id": "warden",
+      "time": 15.56666666666702,
+      "deaths": 0,
+      "gears": 7,
+      "keeps": 0
+     }
+    ]
+   }
+  },
+  "boss_autopilot_gpu": {
+   "entry": "__test-entry.js",
+   "size": "1280x720",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 18.1,
+   "worst_ms": 18.7,
+   "run": {
+    "won": true,
+    "score": 37000,
+    "time": 15.6,
+    "difficulty": "normal",
+    "stages": [
+     {
+      "id": "warden",
+      "time": 15.550000000000352,
+      "deaths": 0,
+      "gears": 7,
+      "keeps": 0
+     }
+    ]
+   }
+  },
+  "foundry_autopilot_gpu": {
+   "entry": "__test-entry.js",
+   "size": "1280x720",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 17.8,
+   "worst_ms": 18.9
+  },
+  "software_renderer_like_review": {
+   "entry": "main.js",
+   "size": "960x540",
+   "software": true,
+   "status": "started",
+   "errors": [],
+   "fps": 26,
+   "p95_ms": 69.1,
+   "worst_ms": 150.9,
+   "review": {
+    "started": true,
+    "crash": null,
+    "fps": 28.7,
+    "worstFrame": 110.8,
+    "errors": []
+   }
+  },
+  "manual_keys_menus_play_pause": {
+   "entry": "__test-entry.js",
+   "size": "960x540",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 18.3,
+   "worst_ms": 19.7
+  },
+  "phone_390x844": {
+   "entry": "__test-entry.js",
+   "size": "390x844",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 18.2,
+   "worst_ms": 19.2
+  },
+  "arcade_run_3_lives_autopilot (ended in game over at the boss)": {
+   "entry": "__test-entry.js",
+   "size": "960x540",
+   "software": false,
+   "status": "started",
+   "errors": [],
+   "fps": 60,
+   "p95_ms": 18.2,
+   "worst_ms": 19.9
+  }
+ }
+}
