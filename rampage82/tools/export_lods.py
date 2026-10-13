@@ -1,11 +1,14 @@
 # RAMPAGE exterior production: C006 Blender model -> Project 0 LOD0 / LOD1 / LOD2 GLBs + palette textures.
-# Blender 4.5:  Blender --background <RAMPAGE_C006_character.blend> --python export_lods.py -- <out_dir> <gladiator.png>
+# Blender 4.5:  Blender --background <RAMPAGE_C006_character.blend> --python export_lods.py -- <out_dir> <display_atlas.png>
 # The source .blend is opened read-only and never saved. No decimation: LOD1 drops small parts, LOD2 is a built shell.
+# v2 (Directive 011): every source material maps by its BASE name (the Event Horizon panes use 'EventDisplay.001',
+# which v1 shipped as Armor); EventDisplay carries the display atlas (tools/make_display_atlas.py); the rear and east
+# banners give way to two new framed broadcast boards; sloped neon strips light the pylon edges and the EH base.
 import bpy, bmesh, sys, os, math, json
 from mathutils import Vector
 import numpy as np
 
-OUT, GLAD = sys.argv[sys.argv.index('--') + 1:][:2]
+OUT, ATLAS = sys.argv[sys.argv.index('--') + 1:][:2]
 os.makedirs(OUT, exist_ok=True)
 sc = bpy.context.scene
 
@@ -23,6 +26,8 @@ SRC = {  # source material -> (target LOD0 material, base sRGB, emissive sRGB 0.
     'GladiatorDisplay': ('EventDisplay', (0, 0, 0), None),
 }
 DROP_COLLECTIONS = ('Context', 'R6_EH_Lensing_preview')       # context is not the build; lensing is drawn by the shader
+DROP_OBJECTS = ('Banner_Rear', 'Rear_Emblem', 'Banner_Rear_Up', 'Sign_Rear_Banner', 'Truss_N_',      # behind the REAR board
+                'Banner_East', 'Sign_East_Banner')                                                  # behind the EAST board
 cells = {name: i for i, name in enumerate(SRC)}
 def cell_uv(name):
     i = cells[name]; cx, cy = i % 8, i // 8
@@ -40,7 +45,7 @@ def write_png(path, which, size=64):
     im.pixels.foreach_set(px.ravel()); im.update(); im.filepath_raw = path; im.file_format = 'PNG'; im.save()
     return bpy.data.images.load(path)
 TEX = {k: write_png(os.path.join(OUT, f'palette-{k}.png'), k) for k in ('base', 'emis', 'lod1emis')}
-GLAD_IMG = bpy.data.images.load(GLAD)
+ATLAS_IMG = bpy.data.images.load(ATLAS)
 
 def make_mat(name, base_img=None, emis_img=None, alpha=None, extra_img=None, rough=.45, metal=.8):
     m = bpy.data.materials.new(name); m.use_nodes = True; t = m.node_tree; b = t.nodes['Principled BSDF']
@@ -50,7 +55,7 @@ def make_mat(name, base_img=None, emis_img=None, alpha=None, extra_img=None, rou
     if emis_img:
         n = t.nodes.new('ShaderNodeTexImage'); n.image = emis_img; n.interpolation = 'Closest'
         t.links.new(n.outputs['Color'], b.inputs['Emission Color']); b.inputs['Emission Strength'].default_value = 1.0
-    if extra_img:   # EventDisplay carries the gladiator art as its base texture (the shader decides where it shows)
+    if extra_img:   # EventDisplay carries the display atlas as its base texture (the shader decides where it shows)
         n = t.nodes.new('ShaderNodeTexImage'); n.image = extra_img; t.links.new(n.outputs['Color'], b.inputs['Base Color'])
     if alpha is not None:
         b.inputs['Alpha'].default_value = alpha; m.surface_render_method = 'BLENDED'
@@ -62,12 +67,13 @@ def source_objects():
     for o in sc.objects:
         if o.type != 'MESH': continue
         if any(c.name.startswith(DROP_COLLECTIONS) for c in o.users_collection): continue
+        if o.name.startswith(DROP_OBJECTS): continue
         obs.append(o)
     return obs
 def bake_object(o, keep):
     """Copy an object's evaluated mesh into a list of (verts, faces, uvs, target material) in world space."""
     dg = bpy.context.evaluated_depsgraph_get(); e = o.evaluated_get(dg); me = e.to_mesh()
-    src = o.material_slots[0].material.name.replace('src__', '', 1) if o.material_slots and o.material_slots[0].material else 'Armor'
+    src = o.material_slots[0].material.name.replace('src__', '', 1).split('.')[0] if o.material_slots and o.material_slots[0].material else 'Armor'
     if src not in SRC: src = 'Armor'
     tgt = keep(src, o)
     if tgt is None: e.to_mesh_clear(); return None
@@ -77,7 +83,9 @@ def bake_object(o, keep):
     has_uv = me.uv_layers.active is not None and src in ('GladiatorDisplay', 'EventDisplay', 'EventDisplay_DeepLayer_preview')
     uvs = []
     for p in me.polygons:
-        if has_uv: uvs.append([tuple(me.uv_layers.active.data[li].uv) for li in p.loop_indices])
+        if has_uv and src == 'GladiatorDisplay':   # the promo art lives in the atlas's left half
+            uvs.append([(me.uv_layers.active.data[li].uv[0] * .5, me.uv_layers.active.data[li].uv[1]) for li in p.loop_indices])
+        elif has_uv: uvs.append([tuple(me.uv_layers.active.data[li].uv) for li in p.loop_indices])
         else: uvs.append([cell_uv(src)] * len(p.loop_indices))
     e.to_mesh_clear()
     return verts, faces, uvs, tgt
@@ -95,11 +103,68 @@ def build(name, parts, mats):
     for mname in order: me.materials.append(mats[mname])
     o = bpy.data.objects.new(name, me); sc.collection.objects.link(o); return o
 
+# ---------------------------------------------------------------- v2 additions (built here, in lot-safe bounds; the .blend is untouched)
+def box(name, x0, x1, y0, y1, z0, z1, cell):
+    v = [Vector((x1 if i & 1 else x0, y1 if i & 2 else y0, z1 if i & 4 else z0)) for i in range(8)]
+    f = [(0, 2, 3, 1), (4, 5, 7, 6), (0, 4, 6, 2), (1, 3, 7, 5), (0, 1, 5, 4), (2, 6, 7, 3)]
+    return name, v, f, [[cell_uv(cell)] * 4 for _ in f], SRC[cell][0]
+def strut(name, a, b, w, cell):              # a square prism from point a to point b (sloped neon along a leaning edge)
+    h = w / 2; v = []
+    for c in (a, b): v += [Vector((c[0] + dx, c[1] + dy, c[2])) for dx, dy in ((-h, -h), (h, -h), (-h, h), (h, h))]
+    f = [(0, 2, 3, 1), (4, 5, 7, 6), (0, 4, 6, 2), (1, 3, 7, 5), (0, 1, 5, 4), (2, 6, 7, 3)]
+    return name, v, f, [[cell_uv(cell)] * 4 for _ in f], SRC[cell][0]
+def quad(name, pts, uvs):
+    return name, [Vector(p) for p in pts], [(0, 1, 2, 3)], [uvs], 'EventDisplay'
+def additions():
+    P = []
+    # REAR broadcast board (faces lot -Z = Blender +Y): the +Z gladiator frame mirrored, 0.24 m proud of the 24 m shoulder neon
+    P += [box('V2_Rear_Sill', -6.4, 6.4, 8.64, 10.84, 12.5, 13.65, 'ArmorPlate'), box('V2_Rear_Top', -6.3, 6.3, 8.24, 10.54, 32.8, 34.6, 'ArmorPlate'),
+          box('V2_Rear_Backing', -5.7, 5.7, 7.64, 9.54, 13.0, 33.4, 'Recess')]
+    for sx in (-1, 1):
+        P += [box(f'V2_Rear_Frame_{sx}', *sorted((sx * 5.0, sx * 6.2)), 9.44, 10.44, 13.0, 33.4, 'ArmorPlate'),
+              box(f'V2_Rear_Wing_{sx}', *sorted((sx * 6.1, sx * 7.5)), 9.04, 10.44, 14.5, 31.5, 'ArmorPlate'),
+              box(f'V2_Neon_Rear_{sx}', *sorted((sx * 4.92, sx * 5.04)), 10.08, 10.35, 13.5, 32.9, 'Neon')]
+    P += [box('V2_Neon_Rear_Sill', -5.6, 5.6, 10.24, 10.34, 13.57, 13.67, 'Neon'),
+          quad('V2_Display_Rear', ((5, 9.6, 13.6), (-5, 9.6, 13.6), (-5, 9.6, 32.8), (5, 9.6, 32.8)),
+               [(.620, 0.0), (.880, 0.0), (.880, .5), (.620, .5)])]
+    # EAST broadcast board (faces the ring road, +X) between the chevron hood (22.5 m) and the 35 m shoulder
+    P += [box('V2_East_Sill', 8.6, 10.5, -6.8, 6.8, 22.5, 23.15, 'ArmorPlate'), box('V2_East_Top', 8.4, 10.4, -6.8, 6.8, 33.0, 34.6, 'ArmorPlate'),
+          box('V2_East_Backing', 8.0, 9.58, -5.95, 5.95, 23.15, 33.0, 'Recess')]
+    for sy in (-1, 1):
+        P += [box(f'V2_East_Frame_{sy}', 9.0, 10.4, *sorted((sy * 5.95, sy * 6.8)), 22.5, 34.6, 'ArmorPlate'),
+              box(f'V2_Neon_East_{sy}', 10.36, 10.48, *sorted((sy * 5.86, sy * 5.98)), 23.15, 33.0, 'NeonOrange')]
+    P += [box('V2_Neon_East_Sill', 10.46, 10.56, -5.9, 5.9, 22.98, 23.1, 'Neon'), box('V2_Neon_East_Top', 10.36, 10.46, -5.9, 5.9, 33.04, 33.14, 'Neon'),
+          quad('V2_Display_East', ((9.62, -5.95, 23.15), (9.62, 5.95, 23.15), (9.62, 5.95, 33.0), (9.62, -5.95, 33.0)),
+               [(.5, .542), (1.0, .542), (1.0, .959), (.5, .959)])]
+    # pylon edges: sloped orange strips on the face-side edges (none on the west face, which belongs to the gap pairing)
+    def edge(z):                               # pylon section at height z: inner 7.35 -> 6.85, outer 11.15 -> 10.25 (12 -> 48 m)
+        t = (z - 12.0) / 36.0; return 7.35 - .5 * t, 11.15 - .9 * t
+    for n, sx, sy, axis in (('FE', 1, -1, 'x'), ('FE', 1, -1, 'y'), ('RE', 1, 1, 'x'), ('RE', 1, 1, 'y'), ('FW', -1, -1, 'y'), ('RW', -1, 1, 'y')):
+        pts = []
+        for z in (18.0, 48.0):
+            i, o = edge(z)
+            pts.append((sx * o, sy * i, z) if axis == 'x' else (sx * i, sy * o, z))
+        P.append(strut(f'V2_Neon_Pylon_{n}_{axis}', pts[0], pts[1], .14, 'NeonOrange'))
+    # the Event Horizon's base: an orange line under the drip ledge on the E, N and S faces
+    P += [box('V2_Neon_EH_Base_E', 8.44, 8.6, -6.9, 6.9, 35.18, 35.3, 'NeonOrange'),
+          box('V2_Neon_EH_Base_N', -6.9, 6.9, 8.44, 8.6, 35.18, 35.3, 'NeonOrange'),
+          box('V2_Neon_EH_Base_S', -6.9, 6.9, -8.6, -8.44, 35.18, 35.3, 'NeonOrange')]
+    for name, v, f, uv, tgt in P:
+        for c in v: assert abs(c.x) <= 12.2 and abs(c.y) <= 12.2 and c.z <= 56.9, name
+    return P
+ADD = additions()
+def add_parts(keep):
+    out = []
+    for name, v, f, uv, tgt in ADD:
+        t = keep(name, tgt)
+        if t: out.append((v, f, uv, t))
+    return out
+
 # ---------------------------------------------------------------- LOD0: everything visible, 4 materials
 M0 = {'Armor': make_mat('Armor', TEX['base'], TEX['emis']), 'Neon': make_mat('Neon', TEX['base'], TEX['emis'], rough=.4, metal=0),
-      'Glass': make_mat('Glass', None, None, alpha=.18, rough=.05, metal=0), 'EventDisplay': make_mat('EventDisplay', None, None, extra_img=GLAD_IMG, rough=.3, metal=0)}
+      'Glass': make_mat('Glass', None, None, alpha=.18, rough=.05, metal=0), 'EventDisplay': make_mat('EventDisplay', None, None, extra_img=ATLAS_IMG, rough=.3, metal=0)}
 srcs = source_objects()
-parts0 = [p for p in (bake_object(o, lambda s, o: SRC[s][0]) for o in srcs) if p]
+parts0 = [p for p in (bake_object(o, lambda s, o: SRC[s][0]) for o in srcs) if p] + add_parts(lambda n, t: t)
 lod0 = build('RAMPAGE_LOD0', parts0, M0)
 def export(obj, path):
     for o in sc.objects: o.select_set(False)
@@ -125,9 +190,11 @@ SMALL = ('Plate_', 'Brace_', 'Channel_', 'Rib_Node', 'Vent_', 'Pylon_Vent', 'Pyl
 def keep1(src, o):
     if o.name.startswith(SMALL) or src in ('EH_Glass', 'PortalGlass', 'EventDisplay_DeepLayer_preview'): return None
     return 'EventDisplay' if SRC[src][0] == 'EventDisplay' else 'Armor'
-# LOD1 shares material names with LOD0 so EventDisplay keeps its shader; textures: palette + LOD1 glow map (the gladiator art stays LOD0 only)
+# LOD1 shares material names with LOD0 so EventDisplay keeps its shader; textures: palette + LOD1 glow map (the atlas stays LOD0 only).
+# Without the atlas the boards read a dim red base: the shader then shows its energy and a faint first layer.
 M1 = {'Armor': make_mat('Armor', TEX['base'], TEX['lod1emis']), 'EventDisplay': make_mat('EventDisplay', None, None, rough=.3, metal=0)}
-parts1 = [p for p in (bake_object(o, keep1) for o in srcs) if p]
+M1['EventDisplay'].node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value = (.12, .01, .005, 1)
+parts1 = [p for p in (bake_object(o, keep1) for o in srcs) if p] + add_parts(lambda n, t: None if n.startswith('V2_Neon') else ('EventDisplay' if t == 'EventDisplay' else 'Armor'))
 lod1 = build('RAMPAGE_LOD1', parts1, M1)
 ship(lod1, 'lod1')
 

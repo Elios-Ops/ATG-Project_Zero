@@ -28,7 +28,27 @@ Files: `experience/rules.js` (pure rules: course, physics, hazards, Surge, scori
 (world, lighting, hazard feedback, camera, HUD, finish celebration, Contenders' Wall notes, CONQUEROR), `experience/gladiator.js`
 (the contender), `experience/hudfont.js` (bitmap OFL fonts), `experience/main.js` (entry), `experience/experience.json`.
 
-## The exterior — production LODs
+## Exterior v2 — visual upgrade (Directive 011) · validated 2026-10-13, publish pending
+
+- **Event Horizon repaired**: the four main panes used `EventDisplay.001`, which v1 shipped as plain Armor. The exporter
+  now maps materials by base name, so the panes run `event-horizon.glsl` again (pairing with ZELTAR unchanged).
+- **Three broadcast boards** on the faces away from ZELTAR. The atlas comes from `tools/make_display_atlas.py` and the shader is `board()` in `event-horizon.glsl`:
+  - **+Z** (10 × 19.2 m, 13.6–32.8 m): the broadcast art, with LED rows and a sweep.
+  - **east** (12 × 10 m, 23–33 m, above the chevron hood): cycles RAMPAGE → ENTER./SURVIVE./CONQUER. → countdown 3-2-1 → THE CLIMB BEGINS.
+  - **rear** (10 × 19.2 m): cycles arena image → WARNING / THE SURGE IS RISING → RAMPAGE and the creed.
+  - Every board dissolves between layers every 5 s, and nothing flashes faster than ~1 Hz.
+- **Lighting and depth**:
+  - framed boards (frames, wings, recessed backing, neon edges)
+  - sloped orange strips on the pylon edges (none on the gap face)
+  - an orange line along the Event Horizon's base on the E, N and S faces
+- **Removed in export only**: the rear and east banners and their supports, which now sit behind the boards. The `.blend` is untouched.
+- **Checks**:
+  - audit: 19,992 / 3,866 / 119 triangles, ALL PASS
+  - official validation: 0 errors and 0 warnings on every LOD
+  - shader cost: Event Horizon 2.1–2.5×
+  - `tests/display-preview.cjs` renders every board through the real shader
+
+## The exterior — production LODs (v1, live until v2 is published)
 
 Built from the approved C006 architecture by `tools/export_lods.py` (Blender 4.5 LTS). No decimation: LOD1 drops small
 parts, LOD2 is a purpose-built silhouette shell. Materials and textures: a 64 px palette (base + glow map).
