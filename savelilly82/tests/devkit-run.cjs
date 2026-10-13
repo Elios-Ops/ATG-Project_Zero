@@ -33,7 +33,8 @@ const server = http.createServer((req, res) => {
 (async () => {
   await new Promise(r => server.listen(PORT, '127.0.0.1', r));
   const browser = await chromium.launch({ headless: true, args: SOFT ? ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] : GPU ? ['--use-angle=metal', '--ignore-gpu-blocklist', '--enable-gpu-rasterization'] : [] });
-  const ctx = await browser.newContext({ permissions: ['local-network-access'], viewport: { width: 1440, height: 1000 } });
+  const VIDEO = opt('video', null);
+  const ctx = await browser.newContext({ permissions: ['local-network-access'], viewport: { width: 1440, height: 1000 }, ...(VIDEO ? { recordVideo: { dir: OUT, size: { width: 1440, height: 1000 } } } : {}) });
   const page = await ctx.newPage(); const pageErrors = []; page.on('pageerror', e => pageErrors.push(e.message));
   const url = `https://project0.city/devkit?entry=${encodeURIComponent(`http://localhost:${PORT}/${ENTRY}`)}&width=25&depth=25&height=57&size=${SIZE}`;
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
@@ -45,6 +46,7 @@ const server = http.createServer((req, res) => {
   }
   const res = { entry: ENTRY, size: SIZE, software: SOFT, status, attempts, pageErrors, shots: [] };
   const t0 = Date.now(), el = page.locator('#device');
+  try { res.device = await el.boundingBox(); } catch (e) { /* no box */ }
   if (!opt('keep-panel', false)) await page.evaluate(() => { for (const b of document.querySelectorAll('*')) if (b.children.length === 0 && /^[×✕]$/.test((b.textContent || '').trim())) b.click(); });   // close the city's How-to-play panel
   if (status === 'started') {
     const events = [...SHOTS.map(t => ({ t, shot: true })), ...KEYS].sort((a, b) => a.t - b.t);
@@ -62,5 +64,6 @@ const server = http.createServer((req, res) => {
   console.log(JSON.stringify({ status: res.final.status, reason: res.final.reason, errors: res.final.errors, pageErrors, fps: f.fps, p95: f.p95, worst: f.worst, first: f.first, shots: res.shots.length,
     review: res.review && { started: res.review.started, crash: res.review.crash, fps: res.review.fps, worst: res.review.worstFrame, errors: res.review.errors, blocked: res.review.blocked } }));
   for (const l of res.final.console) if (/error|SAVE LILLY/i.test(l)) console.log('  ', l.slice(0, 300));
+  if (VIDEO) { const v = page.video(); await ctx.close(); if (v) fs.renameSync(await v.path(), path.join(OUT, 'run.webm')); }
   await browser.close(); server.close();
 })().catch(e => { console.error(e); server.close(); process.exit(1); });

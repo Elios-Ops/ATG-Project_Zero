@@ -59,7 +59,7 @@ function foundry() {
     { type: 'life', x: 27.2, y: surf(plats[0], 27.2) + 0.9 },
   ];
   return {
-    id: 'foundry', kind: 'vertical', bounds: { x0: 0, x1: 28, y0: -2, y1: 26 }, camera: { minY: -1, maxY: 26, minX: 0, maxX: 28, view: 14.5 },
+    id: 'foundry', kind: 'vertical', bounds: { x0: 0, x1: 28, y0: -2, y1: 26 }, camera: { minY: -1, maxY: 26, minX: 0, maxX: 28, view: 13.5 },
     plats, ladders, brokenLadders, items,
     spawn: { x: 4, y: surf(plats[0], 4) }, goal: { x: 10.2, y: 23.3, w: 5, h: 2.5 },
     checkpoints: [{ x: 4, y: surf(plats[0], 4) }, { x: 21.5, y: surf(plats[4], 21.5) }],
@@ -113,7 +113,7 @@ function machine() {
     { type: 'life', x: 66, y: 8.9 },
   ];
   return {
-    id: 'machine', kind: 'horizontal', bounds: { x0: 0, x1: 124, y0: -3, y1: 18 }, camera: { minY: -2, maxY: 17, minX: 0, maxX: 124, view: 12.5 },
+    id: 'machine', kind: 'horizontal', bounds: { x0: 0, x1: 124, y0: -3, y1: 18 }, camera: { minY: -2, maxY: 17, minX: 0, maxX: 124, view: 11.8 },
     plats, ladders, brokenLadders: [], items,
     spawn: { x: 2, y: 0 }, goal: { x: 120.2, y: 0, w: 3.4, h: 3.2 },
     checkpoints: [{ x: 2, y: 0 }, { x: 46.9, y: 0 }, { x: 75.5, y: 0 }, { x: 100.8, y: 0 }],
@@ -195,7 +195,7 @@ function ascent() {
     { type: 'gauntlet', x: 22, y: 41 },
   ];
   return {
-    id: 'ascent', kind: 'vertical', bounds: { x0: -3, x1: 24, y0: -6, y1: 74 }, camera: { minY: -2, maxY: 74, minX: -3, maxX: 24, view: 13.5 },
+    id: 'ascent', kind: 'vertical', bounds: { x0: -3, x1: 24, y0: -6, y1: 74 }, camera: { minY: -2, maxY: 74, minX: -3, maxX: 24, view: 12.8 },
     plats, ladders, brokenLadders: [], items,
     spawn: { x: 4, y: 0 }, goal: { x: 8, y: 70, w: 8, h: 3 },
     checkpoints: [{ x: 4, y: 0 }, { x: 3, y: 15.2 }, { x: 12, y: 36 }, { x: 20, y: 56.6 }],

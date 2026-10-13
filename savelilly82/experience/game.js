@@ -20,7 +20,7 @@ const LINES = {
   ascent: ['THE SURGE! CLIMB!', 'DON\'T LOOK DOWN!', 'ALMOST THERE!', 'HURRY, JAX!'],
   warden: ['THE COUPLINGS! STEP ON THEM!', 'HE AIMS FOR YOUR FLOOR!', 'JUMP THE SHOCKWAVE!', 'YOU CAN DO IT!'],
 };
-const RANKS = [[260000, 'RAMPAGE LEGEND'], [200000, 'CHAMPION'], [150000, 'CONQUEROR'], [100000, 'GLADIATOR'], [60000, 'CONTENDER'], [0, 'ROOKIE']];
+const RANKS = [[90000, 'RAMPAGE LEGEND'], [78000, 'CHAMPION'], [66000, 'CONQUEROR'], [52000, 'GLADIATOR'], [36000, 'CONTENDER'], [0, 'ROOKIE']];
 
 export async function createGame(p0, opts = {}) {
   p0.loading(0.04, 'opening the fortress'); const dbg = (...a) => opts.debug && p0.log('SAVE LILLY dbg', ...a); dbg('begin');
@@ -70,7 +70,6 @@ export async function createGame(p0, opts = {}) {
     g.scale.setScalar(1.25); g.visible = false; root.add(g); return g;
   })();
   const heroLight = light ? null : new THREE.PointLight(0xffd2b0, 26, 7, 1.4); if (heroLight) root.add(heroLight);
-  hero.root.scale.setScalar(1.05);
   const cage = (() => {
     const g = new THREE.Group(), barM = M(0x8a8e98, { metal: 0.9, rough: 0.3 });
     for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2, b = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 1.9, 6), barM); b.position.set(Math.cos(a) * 0.62, 0.95, Math.sin(a) * 0.62); g.add(b); }
@@ -104,7 +103,9 @@ export async function createGame(p0, opts = {}) {
     world.group.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material && !o.material.userData.shared) { const m = o.material; if (m.map && !Object.values(tex).includes(m.map)) m.map.dispose(); m.dispose(); } });
     world = null; fx.clearEmitters();
   }
+  let loadId = 0;
   async function loadLevel(id, simOpts) {
+    const my = ++loadId;
     disposeWorld();
     levelId = id;
     G.sim = createSim(id, simOpts);
@@ -116,6 +117,7 @@ export async function createGame(p0, opts = {}) {
     placeCast(true);
     const h = G.sim.hero; G.cam.x = h.x; G.cam.y = h.y + 3;
     try { await renderer.compileAsync(scene, cam); } catch (e) { /* older renderers compile on draw */ }
+    return my === loadId;                                     // false: a newer load replaced this one meanwhile
   }
 
   // ------------------------------------------------------------------ the cast: where the Warden and Lilly stand in each stage
@@ -151,8 +153,8 @@ export async function createGame(p0, opts = {}) {
   }
   async function startAttract() {
     G.attract = true;
-    await loadLevel('foundry', { seed: 1 + Math.floor(Math.random() * 1e6), difficulty: 'normal', lives: 99 });
-    G.bot = createBot('foundry');
+    const current = await loadLevel('foundry', { seed: 1 + Math.floor(Math.random() * 1e6), difficulty: 'normal', lives: 99 });
+    if (current && G.attract) G.bot = createBot('foundry');
   }
   function toMenu() { G.screen = 'menu'; G.sel = 0; G.items = mainItems(); G.force = true; }
   function startRun(stageIdx, arcade) {
@@ -494,6 +496,8 @@ export async function createGame(p0, opts = {}) {
     if (o && o.anim) anim = o.anim;
     hero.root.position.set(h.x, h.state === 'dying' ? h.y + Math.max(-3, 1.5 * Math.sin(Math.min(h.st, 1.2) * 2.6)) : h.y, 0);
     if (heroLight) heroLight.position.set(h.x + 0.8, h.y + 2.2, 2.2);
+    const cs = Math.max(1.05, Math.min(1.4, (L.camera.view || 12.5) / 12.5 * 1.05));   // wide shots: bigger characters
+    hero.root.scale.setScalar(cs); lilly.root.scale.setScalar(cs * 0.95);
     hero.root.rotation.z = h.state === 'dying' ? Math.min(h.st, 0.8) * 2.2 * -h.face : 0;
     hero.update(dt, { anim, t: G.t, runPhase: h.runT * 1.35, climbPhase: h.climbT * 1.1, face: o && o.face ? o.face : h.face, gauntlet: h.gaunt > 0, vx: h.vx, vy: h.vy, inv: h.inv > 0 && h.state === 'play' });
     // the Warden: his mode comes from the cutscene, the stage spawner or the boss
