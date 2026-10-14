@@ -6,6 +6,7 @@ import argparse, hashlib, json, os, shutil, subprocess, sys, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE); REPO = os.path.dirname(ROOT)
 ap = argparse.ArgumentParser(); ap.add_argument('--fonts', required=True); ap.add_argument('--out', required=True); ap.add_argument('--skip-assets', action='store_true')
+ap.add_argument('--chars', help='dir with the game-ready character GLBs (jax.glb, lilly.glb, warden.glb); omit for the built-in characters')
 a = ap.parse_args()
 src, assets = os.path.join(ROOT, 'experience'), os.path.join(ROOT, 'experience', 'assets')
 if not a.skip_assets:
@@ -17,6 +18,9 @@ if not a.skip_assets:
     run(os.path.join(REPO, 'rampage82', 'tools', 'make_font_atlas.py'), a.fonts, assets)
     shutil.copy(os.path.join(a.fonts, 'anton', 'OFL.txt'), os.path.join(assets, 'OFL-Anton.txt'))
     shutil.copy(os.path.join(a.fonts, 'oswald', 'OFL.txt'), os.path.join(assets, 'OFL-Oswald.txt'))
+if a.chars:
+    os.makedirs(os.path.join(assets, 'chars'), exist_ok=True)
+    for n in ('jax.glb', 'lilly.glb', 'warden.glb'): shutil.copy(os.path.join(a.chars, n), os.path.join(assets, 'chars', n))
 out = os.path.join(a.out, 'experience'); shutil.rmtree(out, ignore_errors=True); os.makedirs(out)
 for f in sorted(os.listdir(src)):
     if f.endswith('.js') and not f.startswith(('_', 'main-test')) or f == 'experience.json': shutil.copy(os.path.join(src, f), out)

@@ -5,6 +5,7 @@ import { createSim, stepSim, DT, DIFFICULTY, POINTS, stageClearTally, platY } fr
 import { STAGES } from './levels.js';
 import { createBot, botInput } from './bot.js';
 import { buildHero, buildWarden, buildLilly } from './chars.js';
+import { loadMeshyCast } from './meshychars.js';
 import { buildWorld, makeTextures, PAL } from './world.js';
 import { createFx } from './fx.js';
 import { createHud } from './hud.js';
@@ -62,7 +63,14 @@ export async function createGame(p0, opts = {}) {
   const tex = makeTextures();
   const root = new THREE.Group(); scene.add(root);
   const fx = createFx(light); root.add(fx.group);
-  const hero = buildHero(M), warden = buildWarden(M), lilly = buildLilly(M);
+  let hero = buildHero(M), warden = buildWarden(M), lilly = buildLilly(M);   // built-in characters: the fallback
+  if (!opts.procedural) {
+    try {
+      p0.loading(0.24, 'waking the Warden');
+      const cast = await loadMeshyCast(p0, light, (f, n) => p0.loading(0.24 + 0.16 * f, `loading ${n}`));
+      hero = cast.hero; warden = cast.warden; lilly = cast.lilly;
+    } catch (e) { p0.log('SAVE LILLY: Meshy characters unavailable, using the built-in ones', String(e)); }
+  }
   root.add(hero.root, warden.root, lilly.root);
   const heldDrum = (() => {
     const g = new THREE.Group(), body = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 0.9, 18), M(0x3a3e48, { metal: 0.6, rough: 0.35 })); body.rotation.x = Math.PI / 2; g.add(body);
@@ -137,7 +145,7 @@ export async function createGame(p0, opts = {}) {
     if (id === 'foundry') warden.root.position.set(L.warden.x + G.wardenOff.x, L.warden.y + G.wardenOff.y, -0.1);
     else if (id === 'machine') { warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -2.6); warden.root.scale.setScalar(0.9); }
     else if (id === 'ascent') warden.root.position.set(L.wardenCameo.x + G.wardenOff.x, L.wardenCameo.y + G.wardenOff.y, -0.6);
-    else { warden.root.position.set(L.boss.x + G.wardenOff.x, L.boss.y + G.wardenOff.y, -0.2); warden.root.scale.setScalar(1.15); }
+    else { warden.root.position.set(L.boss.x + G.wardenOff.x, L.boss.y + G.wardenOff.y, -0.2); warden.root.scale.setScalar(warden.kind === 'meshy' ? 1.0 : 1.15); }
   }
 
   // ------------------------------------------------------------------ flow
@@ -204,7 +212,7 @@ export async function createGame(p0, opts = {}) {
     const card = () => { G.banner = { text: `${st.title} · ${st.name}`, sub: st.tag.toUpperCase(), t: 0, dur: 2.6, big: true }; sfx('stage', 0.55); };
     const go = () => { G.mode = 'play'; G.showHud = true; G.lineT = 7; };
     if (id === 'foundry') return { dur: 6.2, update(t) {
-      const top = { x: 8, y: 21 }, bot = { x: h.x + 6, y: h.y + 4 };
+      const top = { x: 8.4, y: 21.6 }, bot = { x: h.x + 6, y: h.y + 4 };
       const k2 = ease((t - 3.4) / 1.6);
       G.camOverride = { x: lerp(top.x, bot.x, k2), y: lerp(top.y, bot.y, k2), z: t < 3.4 ? 0.82 : lerp(0.82, 1, k2) };
       G.letterbox = Math.min(1, t * 2, (6.2 - t) * 2);
@@ -232,16 +240,21 @@ export async function createGame(p0, opts = {}) {
       G.caption = t < 2.2 ? 'THE SUMMIT. SEVENTY METRES UP.' : 'THE SURGE IS RISING. CLIMB!';
       if (this.f1 === undefined && t > 4.4) { this.f1 = 1; card(); say('THE SURGE! CLIMB!', 2.2); }
     }, done: go };
-    return { dur: 6.4, update(t) {                         // the Warden
-      G.camOverride = { x: 14, y: 10, z: t < 4 ? 0.95 : 1 };
-      G.letterbox = Math.min(1, t * 2, (6.4 - t) * 2);
-      G.wardenOff.y = Math.max(0, 14 - t * 22) * (t < 0.7 ? 1 : 0);
-      if (this.f0 === undefined && t > 0.65) { this.f0 = 1; sfx('slam', 0.8); G.shake = 0.9; fx.emit('dust', L.boss.x, L.boss.y, 0, 30); }
-      G.wardenMode = t < 0.7 ? 'idle' : t < 2.4 ? 'roar' : t < 3.8 ? 'pound' : 'idle';
-      if (this.f1 === undefined && t > 0.9) { this.f1 = 1; sfx('roar', 0.8); }
-      if (this.f2 === undefined && t > 2.6) { this.f2 = 1; say('JAX! THE COUPLINGS!', 2.4); }
-      G.caption = t < 3 ? 'THE WARDEN' : 'STEP ON THE FOUR GLOWING COUPLINGS TO BRING HIM DOWN';
-      if (this.f3 === undefined && t > 4.6) { this.f3 = 1; card(); }
+    return { dur: 8.2, update(t) {                         // the Warden: he drops in, roars in close-up, pounds, and the arena opens
+      const Wy = L.boss.y;
+      if (t < 1.0) G.camOverride = { x: 14, y: Wy + 1.5, z: 0.55 };
+      else if (t < 3.2) G.camOverride = { x: 14.4, y: Wy + 3.6, z: 0.34 };
+      else if (t < 4.8) G.camOverride = { x: 14, y: Wy + 2.4, z: 0.5 };
+      else G.camOverride = { x: 14, y: 10.6, z: 1 };
+      G.letterbox = Math.min(1, t * 2, (8.2 - t) * 2);
+      G.wardenOff.y = t < 0.85 ? Math.max(0, 16 * (1 - t / 0.85) ** 2) : 0;
+      if (this.f0 === undefined && t > 0.85) { this.f0 = 1; sfx('slam', 0.9); G.shake = 1.1; fx.emit('dust', L.boss.x, L.boss.y, 0, 40); fx.emit('smash', L.boss.x, L.boss.y + 0.3, 0.4, 30); }
+      G.wardenMode = t < 0.85 ? 'idle' : t < 1.2 ? 'hurt' : t < 3.2 ? 'roar' : t < 4.8 ? 'pound' : 'idle';
+      if (this.f1 === undefined && t > 1.25) { this.f1 = 1; sfx('roar', 0.9); G.shake = 0.6; }
+      if (this.f4 === undefined && t > 3.2) { this.f4 = 1; sfx('pound', 0.7); }
+      if (this.f2 === undefined && t > 5.0) { this.f2 = 1; say('JAX! THE COUPLINGS!', 2.4); }
+      G.caption = t < 3.2 ? 'THE WARDEN' : t < 4.8 ? 'MASTER OF THE FORTRESS' : 'STEP ON THE FOUR GLOWING COUPLINGS TO BRING HIM DOWN';
+      if (this.f3 === undefined && t > 6.0) { this.f3 = 1; card(); }
     }, done: () => { G.wardenOff.y = 0; go(); } };
   }
   function clearCut(id) {
@@ -513,10 +526,13 @@ export async function createGame(p0, opts = {}) {
     }
     placeCast(false);
     // the drum he lifts before a throw (between his fists, above his head)
-    heldDrum.visible = (wm === 'grab' || (wm === 'tell' && false)) && warden.root.visible;
+    heldDrum.visible = wm === 'grab' && warden.root.visible;
     if (heldDrum.visible) {
-      const wp = warden.root.position, sc = warden.root.scale.x, lift = Math.min(1, wu * 1.3);
-      heldDrum.position.set(wp.x + 0.9 * sc * (L.id === 'warden' ? (h.x < wp.x ? -1 : 1) : 1), wp.y + (2.6 + 2.6 * lift) * sc, wp.z + 0.6);
+      if (warden.handsCenter) { warden.root.updateMatrixWorld(true); warden.handsCenter(heldDrum.position, root); heldDrum.position.z += 0.3; }
+      else {
+        const wp = warden.root.position, sc = warden.root.scale.x, lift = Math.min(1, wu * 1.3);
+        heldDrum.position.set(wp.x + 0.9 * sc * (L.id === 'warden' ? (h.x < wp.x ? -1 : 1) : 1), wp.y + (2.6 + 2.6 * lift) * sc, wp.z + 0.6);
+      }
       heldDrum.rotation.z = G.t * 2;
     }
     warden.update(dt, { mode: wm, t: G.t, u: wu, anger, face: L.id === 'warden' ? (h.x < warden.root.position.x ? -1 : 1) : 1 });

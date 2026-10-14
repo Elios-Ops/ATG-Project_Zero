@@ -139,12 +139,12 @@ export function createHud(p0, cam, fonts, logo, light) {
     for (let i = 0; i < Math.min(6, s.lives); i++) lifeIcon(200 * k + i * 0 + (i % 3) * 26 * k, (i < 3 ? 46 : 76) * k, 10 * k);
     if (s.lives > 6) T('×' + s.lives, 270 * k, 84 * k, 18, COL.ink, 'right');
     // top-centre: stage and bonus (or the Warden's couplings)
-    const st = STAGES[m.stageIdx], cw = 300 * k, cx = W / 2 - cw / 2;
-    panel(cx, 14 * k, cw, 74 * k, 0.7);
-    T(`${st.title} · ${st.name}`, W / 2, 38 * k, 17, COL.amber, 'center', true);
+    const st = STAGES[m.stageIdx], cw = 300 * k, cx = s.boss ? 16 * k : W / 2 - cw / 2, cy = s.boss ? 110 * k : 14 * k;   // the boss: keep the top clear for the Warden
+    panel(cx, cy, cw, 74 * k, 0.7);
+    T(`${st.title} · ${st.name}`, cx + cw / 2, cy + 24 * k, 17, COL.amber, 'center', true);
     if (s.boss) {
-      const done = s.boss.done.filter(Boolean).length; T('COUPLINGS', cx + 18 * k, 72 * k, 18, COL.dim);
-      for (let i = 0; i < 4; i++) { ctx.fillStyle = s.boss.done[i] ? 'rgba(255,255,255,0.15)' : (i < 4 - done ? COL.red : COL.red); ctx.fillStyle = s.boss.done[i] ? 'rgba(255,255,255,0.18)' : COL.red; ctx.fillRect(cx + 130 * k + i * 38 * k, 56 * k, 32 * k, 18 * k); }
+      T('COUPLINGS', cx + 18 * k, cy + 58 * k, 18, COL.dim);
+      for (let i = 0; i < 4; i++) { ctx.fillStyle = s.boss.done[i] ? 'rgba(255,255,255,0.18)' : COL.red; ctx.fillRect(cx + 130 * k + i * 38 * k, cy + 42 * k, 32 * k, 18 * k); }
     } else {
       T('BONUS', cx + 20 * k, 72 * k, 18, COL.dim);
       T(fmt(s.bonus), cx + cw - 20 * k, 76 * k, 30, s.bonus <= 1000 ? COL.red : COL.gold, 'right', true);

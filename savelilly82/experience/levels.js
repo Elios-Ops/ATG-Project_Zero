@@ -234,7 +234,7 @@ function warden() {
   ];
   const items = [...gears(9, 19, 4, 4.4), ...gears(3, 11, 3, x => surf(plats[2], x)), ...gears(17, 25, 3, x => surf(plats[3], x))];
   return {
-    id: 'warden', kind: 'boss', bounds: { x0: 0, x1: 28, y0: -2, y1: 21 }, camera: { minY: -1.5, maxY: 23, minX: 0, maxX: 28, view: 21.5, fixed: { x: 14, y: 10.6 } },
+    id: 'warden', kind: 'boss', bounds: { x0: 0, x1: 28, y0: -2, y1: 21 }, camera: { minY: -1.5, maxY: 23.5, minX: 0, maxX: 28, view: 22, fixed: { x: 14, y: 11.0 } },
     plats, ladders, brokenLadders: [], items, couplings,
     spawn: { x: 3, y: 0 }, goal: null,
     checkpoints: [{ x: 3, y: 0 }],

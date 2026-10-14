@@ -1,6 +1,6 @@
 # RAMPAGE: SAVE LILLY — Lot #82 (All Things Gamed)
 
-**Status: complete game, validated, not published.** The live Lot #82 experience (ATG Gladiator Training Academy) is
+**Status: complete game, validated, not published.** Characters: the original Meshy Jax, Lilly and Warden (custom rig), see `CHARACTERS.md`; the built-in characters remain as the fallback. The live Lot #82 experience (ATG Gladiator Training Academy) is
 unchanged. Publishing SAVE LILLY replaces it, so it needs the owner's approval. RAMPAGE: The Climb (`rampage82/`)
 is kept as it was.
 
@@ -35,7 +35,8 @@ fortress. **Jax**, a foundry runner with a mechanical gauntlet, has to climb up 
 | `sim.js` | The rules as a pure, deterministic 60 Hz simulation, with no three.js and no p0: hero physics (coyote time, jump buffer, variable jump), ladders, every hazard, the stage Warden, the boss AI, items, checkpoints, lives and score. |
 | `levels.js` | The four levels as data: platforms, ladders, hazards, items, checkpoints, spawners and camera. |
 | `bot.js` | The autopilot. It plays a route and reacts to hazards: it jumps drums, Volts and shockwaves, and waits out vents, crushers and lasers. Used by the title's attract demo and by the tests. |
-| `chars.js` | Jax, the Warden and Lilly, modelled in code with procedural animation. |
+| `meshychars.js` | The Meshy characters and their animation clips (see `CHARACTERS.md`). |
+| `chars.js` | The built-in procedural characters, used if the Meshy models cannot load. |
 | `world.js` | The fortress: truss girders, catwalks, conveyors, lifts, crushers, lasers, vents, slag, the Surge, items, drums and Volts. Layered backdrops (sky shader, skyline, walls, gears, furnaces, scaffolds). Lights. |
 | `fx.js` | Pooled particles: sparks, steam, Surge energy, fire, embers, smoke, dust and fireworks. |
 | `hud.js` | Every screen and the HUD, drawn on one canvas texture with bitmap OFL fonts. |
@@ -68,4 +69,4 @@ screenshots (`--shots`) and record video (`--video`).
 - **No platform achievements.** `p0.items` needs items the owner creates first; ranks are shown in the game instead.
 - **Cosmetic multiplayer.** Every player runs their own game; others appear as ghosts, with no co-op.
 - **Audio is synthesised.** Levels were balanced numerically, not checked by ear.
-- **Low-poly characters.** They are procedural, N64-style models, not sculpted assets.
+- **Software renderer.** With the Meshy characters the light version averages about 24 fps (before: 26–31) and has a few long frames while a stage loads.
