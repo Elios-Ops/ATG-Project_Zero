@@ -1,12 +1,21 @@
 {
   "entry": "main.js",
   "name": "RAMPAGE: SAVE LILLY",
-  "description": "The Warden has taken Lilly to the top of his fortress. Climb the Foundry's girders, run the Machine hall, race the rising Surge up the Ascent, then bring the Warden down by overloading his four couplings. Jump drums for points, grab the Overdrive Gauntlet to smash them. A/D move, W/S climb, Space jump, P pause. Controllers and phones supported.",
+  "description": "Lilly has been captured. The Warden controls the tower, and you're the only one who can bring her home. Play as Jax: run, jump and climb through the Foundry, the Machine and the rising Surge, face the towering cybernetic Warden, and save Lilly. Chase the high score on the weekly leaderboard. ENTER. SURVIVE. CONQUER. Created by All Things Gamed. A/D move, W/S climb, Space jump, P pause.",
   "maxPlayers": 8,
   "ui": "minimized",
   "credits": [
-    { "work": "Game, characters, levels, code, music and sound effects (synthesised)", "by": "All Things Gamed" },
-    { "work": "Anton typeface (SIL Open Font License 1.1, assets/OFL-Anton.txt)", "by": "The Anton Project Authors" },
-    { "work": "Oswald typeface (SIL Open Font License 1.1, assets/OFL-Oswald.txt)", "by": "The Oswald Project Authors" }
+    {
+      "work": "Game, characters, levels, code, music and sound effects (synthesised)",
+      "by": "All Things Gamed"
+    },
+    {
+      "work": "Anton typeface (SIL Open Font License 1.1, assets/OFL-Anton.txt)",
+      "by": "The Anton Project Authors"
+    },
+    {
+      "work": "Oswald typeface (SIL Open Font License 1.1, assets/OFL-Oswald.txt)",
+      "by": "The Oswald Project Authors"
+    }
   ]
 }
