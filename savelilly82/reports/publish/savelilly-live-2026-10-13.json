@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-13",
+ "directive": "021 (owner authorization to publish)",
+ "lot": 82,
+ "published": {
+  "submission": 5292,
+  "status": "live",
+  "reviewed": true,
+  "experience": {
+   "version": "95394347bbdcf761",
+   "name": "RAMPAGE: SAVE LILLY",
+   "maxPlayers": 8,
+   "muted": false,
+   "ui": "minimized"
+  }
+ },
+ "approved_build": {
+  "branch": "savelilly/meshy-characters",
+  "commit": "060d548",
+  "validation_hash": "95394347bbdcf761",
+  "zip_sha256_prefix": "96ba1ba339db4288"
+ },
+ "replaced": {
+  "experience": "8619fc7c57b6039b",
+  "name": "ATG Gladiator Training Academy",
+  "rollback": "atg-local/release/rc1/rollback/academy-experience/experience.zip (private)"
+ },
+ "exterior_unchanged": {
+  "version_before": "5af8a75ec0c1e429-eba9efa00206127f",
+  "version_after": "5af8a75ec0c1e429-eba9efa00206127f"
+ },
+ "leaderboard_before": [
+  {
+   "id": 416,
+   "name": "Seeker",
+   "score": 99017
+  },
+  {
+   "id": 403,
+   "name": "All Things Gamed",
+   "score": 98967,
+   "owner": true
+  },
+  {
+   "id": 295,
+   "name": "Federico",
+   "score": 98942
+  },
+  {
+   "id": 475,
+   "name": "Qweryya",
+   "score": 97735
+  }
+ ],
+ "leaderboard_after": [
+  {
+   "id": 416,
+   "name": "Seeker",
+   "score": 99017
+  },
+  {
+   "id": 403,
+   "name": "All Things Gamed",
+   "score": 98967,
+   "owner": true
+  },
+  {
+   "id": 295,
+   "name": "Federico",
+   "score": 98942
+  },
+  {
+   "id": 475,
+   "name": "Qweryya",
+   "score": 97735
+  }
+ ],
+ "game_rules_unchanged": true,
+ "live_url": "https://project0.city/#82",
+ "live_checks": [
+  "entered from the lot panel as a guest: title, live weekly table, menu, Foundry intro (Warden + Lilly), keyboard run/climb verified"
+ ]
+}
